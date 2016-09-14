@@ -1,0 +1,2704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Technologies xmlns="http://tempuri.org/TechTree.xsd">
+    <DataChecksum NoParse="1">
+        <Ignore>DisplayName,Description,Details,Model,xmlns</Ignore>
+    </DataChecksum>
+    <Culture ID="InterGov">
+        <DisplayName>Interstellar Governments</DisplayName>
+        <Cost>200</Cost>
+        <Description>Allows us to begin researching advanced types of governments.</Description>
+        <Details>Each culture has its own government system, and we want to research each government so we can learn and grow in our knowledge and understanding of other races. There can be no understanding between the different galactic species until we understand as much of each other's culture and society as possible. Plus we want to copy the good parts and use them to improve our own government...</Details>
+        <Requires>UniversalTranslator</Requires>
+        <DiplomacyAbility>5</DiplomacyAbility>
+        <Category>Government</Category>
+        <Model>stardemoc0</Model>
+        <CultureAbility>0</CultureAbility>
+        <AIValue>10</AIValue>
+    </Culture>
+    <Propulsion ID="NewPropulsion">
+        <DisplayName>New Propulsion Techniques</DisplayName>
+        <Cost>25</Cost>
+        <Description>Get in the fast lane for finding new propulsion technologies to make your ships faster.</Description>
+        <Details>We've got Hyperdrive, the great contribution to the galaxy made by the Humans. But Hyperdrive is pretty basic stuff. To go faster, we need to come up with other ways to go faster.
+
+		There's basically two ways to increase how fast we travel. The first way is to bend space more. That's basically all Hyperdrive does. Ships still cannot move very fast in normal space; so Hyperdrive used immense amounts of energy in order to slightly warp space to make a 10 million mile trip seem the same as taking a one light year trip. The second way to make ships travel faster is to increase how fast they move in normal space. Bigger thrusters and what have you. We have some great ideas that, with some good research grants, will allow us to come up with much more advanced stuff.
+		</Details>
+        <Requires>HyperDrive</Requires>
+        <Model>impulse0</Model>
+        <Category>Propulsion</Category>
+        <AIValue>25</AIValue>
+    </Propulsion>
+    <Propulsion ID="HyperDrive">
+        <DisplayName>HyperDrive</DisplayName>
+        <Cost>50</Cost>
+        <Description>Allows ships to travel interstellar space at a reasonable speed.</Description>
+        <Details>The problem with the existing system of space travel - star gates - is that they are slow, bulky and immobile. A star gate is a city in space. It exists solely to move ships from one star gate to another located somewhere else. Travel is not instantaneous with a star gate. A ship travels effectively one adjusted-parsec (pc) per week (.165 light years per week).  For example, the Human star system, Sol is 8pc away from Alpha Centauri and hence would take eight weeks to reach it.</Details>
+        <Requires>None</Requires>
+        <Model>impulse0</Model>
+        <AIValue>10</AIValue>
+    </Propulsion>
+    <Propulsion ID="IonDrive">
+        <DisplayName>Ion Drive</DisplayName>
+        <Cost>50</Cost>
+        <Description>Provide Ion Drive propulsion.</Description>
+        <Details>Ion Drive is the next step up from Hyperdrive. It enables ships to travel slightly faster through normal space, and unlike other attempted propulsion technologies, remains stable when traveling through the warped space created by the Hyperdrive.</Details>
+        <Requires>NewPropulsion</Requires>
+        <Model>impulse0</Model>
+        <Category>Propulsion</Category>
+        <AIValue>20</AIValue>
+    </Propulsion>
+    <Propulsion ID="ImpulseDrive">
+        <DisplayName>Impulse Drive</DisplayName>
+        <Cost>150</Cost>
+        <Description>Provides Impulse Drive propulsion system.</Description>
+        <Details>The more effective energy output and the greatly reduced size of a cold fusion reactor has allowed our scientists to increase the effectiveness of the Micro Impulse Drive. The effective speed of a vessel the size of a colony ship has been doubled. Small ships have also received a speed boost, but not as great as a colony ship. The 'fold' in space, which depends on the mass of the ship along with nearby mass concentration, is doubled for a colony ship. The main problem with this form of propulsion is still the small steps of the Micro Impulse Drive that are made to accomplish ship movement.</Details>
+        <Requires>IonDrive</Requires>
+        <Model>hyper320</Model>
+        <SpeedAbility>10</SpeedAbility>
+        <AIValue>30</AIValue>
+        <Category>Propulsion</Category>
+    </Propulsion>
+    <Culture ID="UniversalTranslator">
+        <DisplayName>Universal Translator</DisplayName>
+        <Cost>25</Cost>
+        <Description>Enables us to communicate with alien races, taking us down the path of diplomacy and government.</Description>
+        <Details>Different species have different modes of communication. The Universal Translator will translate the various blurps, beeps, and blunks into intelligent language for us to understand and so communicate back with them.</Details>
+        <Requires>Xeno Communications</Requires>
+        <Category>Diplomacy</Category>
+        <DiplomacyAbility>5</DiplomacyAbility>
+        <Model>translator0</Model>
+        <AIValue>10</AIValue>
+    </Culture>
+    <Culture ID="Xeno Communications">
+        <DisplayName>Xeno Communications</DisplayName>
+        <Cost>30</Cost>
+        <Description>If we are going to speak to, communicate, trade, and negotiate with aliens, we need to start thinking about how they communicate.</Description>
+        <Details>There's so much to understand, so much to ponder when dealing with alien beings. These sentient creatures may not be bipedal. Some may measure stature by how many eyeballs a creature has. Others may be thick skinned brutes, yet be easily offended. This path of research will put us on the path of being able to understand them, negotiate with them, trade with them, and even entice them with our culture.</Details>
+        <Requires>None</Requires>
+        <Category>Diplomacy</Category>
+        <DiplomacyAbility>5</DiplomacyAbility>
+        <Model>translator0</Model>
+        <AIValue>5</AIValue>
+    </Culture>
+    <Culture ID="Diplomatic Relations">
+        <DisplayName>Diplomatic Relations</DisplayName>
+        <Cost>100</Cost>
+        <Description>Enables us to set up embassies with other civilizations.</Description>
+        <Details>The trick to having good relations with alien species is to first avoid killing them. This may be harder than one might think as many aliens are just incredibly disgusting. We have discovered many handy tips such as this in our research. Part of our strategy should be to expand our cultural influence into the galaxy. We can now build embassies on our worlds which will do just that.</Details>
+        <Requires>UniversalTranslator</Requires>
+        <Category>Diplomacy</Category>
+        <DiplomacyAbility>10</DiplomacyAbility>
+        <Model>instantcom0</Model>
+        <AIValue>7</AIValue>
+    </Culture>
+    <Culture ID="Advanced Diplomacy">
+        <DisplayName>Advanced Diplomacy</DisplayName>
+        <Cost>500</Cost>
+        <Description>Improves our ability to persuade other races of our point of view.</Description>
+        <Details>Note to self: "Pull my finger" is not a universal greeting. Gaffes such as this one can be greatly reduced and, we hope, eliminated entirely as our diplomacy becomes more advanced and our understanding of other cultures (rather humorless cultures, some would say) increases.</Details>
+        <Requires>Diplomatic Relations</Requires>
+        <Category>Diplomacy</Category>
+        <DiplomacyAbility>10</DiplomacyAbility>
+        <Model>instantcom0</Model>
+        <AIValue>3</AIValue>
+    </Culture>
+    <Culture ID="Expert Diplomacy">
+        <DisplayName>Expert Diplomacy</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Make people like you.</Description>
+        <Details>Stories about intoxication don't win friends and influence people. Except Drengin. Small details like this are really useful in suborning...uh...getting to know our galactic neighbors. Did you know the Drengin really like to sing campfire songs and hold hands? Okay, see, that's just the kind of thing we want to avoid. They really don't like that stuff, so "Expert Diplomacy" is of paramount importance.</Details>
+        <Requires>Advanced Diplomacy</Requires>
+        <Category>Diplomacy</Category>
+        <DiplomacyAbility>10</DiplomacyAbility>
+        <Model>instantcom0</Model>
+        <AIValue>1</AIValue>
+    </Culture>
+    <Culture ID="Alliances">
+        <DisplayName>Alliances</DisplayName>
+        <Cost>300</Cost>
+        <Description>Enables you to negotiate alliances with other civilizations.</Description>
+        <Details>It is better to gang up against others than to be ganged up against. Since the earliest days of reality television we have understood the importance of alliances, and being able to negotiate alliances properly will help us to remain a power in the galaxy.</Details>
+        <Requires>InterGov</Requires>
+        <Category>Diplomacy</Category>
+        <DiplomacyAbility>10</DiplomacyAbility>
+        <Model>instantcom0</Model>
+        <AIValue>30</AIValue>
+    </Culture>
+    <Culture ID="Majesty">
+        <DisplayName>Majesty</DisplayName>
+        <Cost>1500</Cost>
+        <Description>It's not enough for people to like us. They must be in awe of us.</Description>
+        <Details>The art of making others bend to our will without realizing that they're doing so is something that few have. In history, only the greatest of kings, the most influential of philosophers, prominent religious figures, and computer game designers have held this distinction.</Details>
+        <Requires>Expert Diplomacy</Requires>
+        <Category>Diplomacy</Category>
+        <DiplomacyAbility>10</DiplomacyAbility>
+        <Model>instantcom0</Model>
+        <AIValue>3</AIValue>
+    </Culture>
+    <Culture ID="Total Majesty">
+        <DisplayName>Total Majesty</DisplayName>
+        <Cost>3000</Cost>
+        <Description>Some people's gas really doesn't stink.</Description>
+        <Details>Make a yes-man out of your staunchest critics. The result of our greatest minds coming together to put forth a series of diplomatic techniques that ensure that other leaders think we're just swell. It's the equivalent of being a super-model, a rock-star and a famous actor all in one.</Details>
+        <Requires>Majesty</Requires>
+        <Category>Diplomacy</Category>
+        <DiplomacyAbility>20</DiplomacyAbility>
+        <Model>instantcom0</Model>
+        <AIValue>5</AIValue>
+    </Culture>
+    <Culture ID="Xeno Entertainment">
+        <DisplayName>Xeno Entertainment</DisplayName>
+        <Cost>500</Cost>
+        <Description>Enables us to better understand other civilizations and incorporate the best of their culture into ours.</Description>
+        <Details>By studying other civilizations we can better understand why we are better than them in every way and feel good in our superiority.</Details>
+        <Requires>UniversalTranslator</Requires>
+        <Category>Culture</Category>
+        <Model>instantcom0</Model>
+        <MoraleAbility>10</MoraleAbility>
+        <AIValue>3</AIValue>
+    </Culture>
+    <Culture ID="Xeno Business">
+        <DisplayName>Xeno Business</DisplayName>
+        <Cost>400</Cost>
+        <Description>Enables the construction of starbase modules and planetary improvements that enhance our culture.</Description>
+        <Details>The best way to make other cultures bend themselves to your whims is to sell stuff to them. Once they're addicted to our clothes, our food, our entertainment and more, we've got them. Plus we get to make a tidy profit too.</Details>
+        <Requires>Xeno Entertainment</Requires>
+        <Category>Culture</Category>
+        <CultureAbility>5</CultureAbility>
+        <Model>instantcom0</Model>
+        <AIValue>3</AIValue>
+    </Culture>
+    <Culture ID="Cultural Domination">
+        <DisplayName>Cultural Domination</DisplayName>
+        <Cost>800</Cost>
+        <Description>Enables the construction of starbase modules and planetary improvements that enhance our culture.</Description>
+        <Details>There is more than one way to conquer a galaxy. Weapons, ships, death, destruction are tried and true ways to be sure. But there is another way - cultural seduction. We convince - influence - the citizens of other worlds to demand that they become part of our civilization.</Details>
+        <Requires>Xeno Business</Requires>
+        <Category>Culture</Category>
+        <CultureAbility>5</CultureAbility>
+        <Model>instantcom0</Model>
+        <AIValue>3</AIValue>
+    </Culture>
+    <Culture ID="Xeno Ethics">
+        <DisplayName>Xeno Ethics</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Allows us to decide which ethical philosophy we are going to fixate on.</Description>
+        <Details>With this technology we can now choose which ethical path we are going to pursue. Throughout our journeys into the galaxy we have run into various events that have caused us to make difficult choices about ethical dilemmas. Those choices will help lead us towards the path that our civilization undertakes.</Details>
+        <Requires>UniversalTranslator</Requires>
+        <Category>Culture</Category>
+        <DiplomacyAbility>5</DiplomacyAbility>
+        <Model>instantcom0</Model>
+        <AIValue>10</AIValue>
+    </Culture>
+    <Culture ID="Good and Evil">
+        <DisplayName>Good and Evil</DisplayName>
+        <Cost>1500</Cost>
+        <Description>Enables us to delve deeply into the philosophies of good and evil.</Description>
+        <Details>The galaxy is slowly finding itself torn between two basic philosophies which, for brevity, we'll call "good" and "evil." Our goal is to learn the underlying philosophical roots that drive cultures towards one of these two directions.</Details>
+        <Requires>Xeno Ethics</Requires>
+        <Category>Culture</Category>
+        <DiplomacyAbility>10</DiplomacyAbility>
+        <Model>instantcom0</Model>
+        <AIValue>3</AIValue>
+    </Culture>
+    <Culture ID="Concepts of Malice">
+        <DisplayName>Concepts of Malice</DisplayName>
+        <Cost>1500</Cost>
+        <Alignment>Evil</Alignment>
+        <Description>Gives us the ability to construct the Temple of Evil.</Description>
+        <Details>With our knowledge of evil, we can now construct the Temple of Evil, which will attract adherents of this philosophy from across the galaxy along with their trade money.
+
+		And somehow, if they realized that our goal is to get their money, we think they'd understand even if they did feel bound by their principles to kill us and eat us.</Details>
+        <Requires>Good and Evil</Requires>
+        <Category>Culture</Category>
+        <DiplomacyAbility>10</DiplomacyAbility>
+        <Model>instantcom0</Model>
+        <AIValue>3</AIValue>
+    </Culture>
+    <Culture ID="Balanced Vision">
+        <DisplayName>Balanced Vision</DisplayName>
+        <Cost>1500</Cost>
+        <Alignment>Neutral</Alignment>
+        <Description>Gives us the ability to construct the Temple of Neutrality.</Description>
+        <Details>The vile evil thugs and the self-righteous avatars of the galaxy are not of interest to us. We pursue a more balanced perspective of the universe. With this vision of a balance between the light and the dark, we can build the Temple of Neutrality.</Details>
+        <Requires>Good and Evil</Requires>
+        <Category>Culture</Category>
+        <DiplomacyAbility>10</DiplomacyAbility>
+        <Model>instantcom0</Model>
+        <AIValue>3</AIValue>
+    </Culture>
+    <Culture ID="Concepts of Righteousness">
+        <DisplayName>Concepts of Righteousness</DisplayName>
+        <Cost>1500</Cost>
+        <Alignment>Good</Alignment>
+        <Description>Gives us the ability to construct the Temple of Righteousness.</Description>
+        <Details>Perhaps it's a little cynical, but now we can build the Temple of Righteousness on one of our worlds (assuming someone else doesn't beat us to it). Then we can gain a portion of any revenue from a civilization that adheres to this moral philosophy.
+
+		While some might be offended at our attempt to "cash in" on the philosophy of benevolence and kindness, we would argue that we are merely putting that money to a good cause - us!</Details>
+        <Requires>Good and Evil</Requires>
+        <Category>Culture</Category>
+        <DiplomacyAbility>10</DiplomacyAbility>
+        <Model>instantcom0</Model>
+        <AIValue>3</AIValue>
+    </Culture>
+    <Culture ID="Historical Assimilation">
+        <DisplayName>Historical Assimilation</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Enables us to assimilate our culture into the popular historical understanding of alien history.</Description>
+        <Details>Stage 1 of any relationship starts out with the two parties believing they have "so much in common." This is rarely true in reality as everyone knows the tale of the Drengin princess and the Torian slave who fell in love back on Toria Prime.
+
+		However, any real attempt to culturally dominate another culture involves making them believe that their history has a lot in common with ours.</Details>
+        <Requires>Cultural Domination</Requires>
+        <Category>Culture</Category>
+        <CultureAbility>5</CultureAbility>
+        <Model>instantcom0</Model>
+        <AIValue>3</AIValue>
+    </Culture>
+    <Culture ID="Xeno Cultural Trends">
+        <DisplayName>Xeno Cultural Trends</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Enables us to build structures/modules that establish galactic cultural trends.</Description>
+        <Details>It will be important for us to help quickly translate any popular cultures that originate in our civilization into ones that flourish in other civilizations. Thus, we will set ourselves up as the center of cultural life.</Details>
+        <Requires>Historical Assimilation</Requires>
+        <Category>Culture</Category>
+        <CultureAbility>5</CultureAbility>
+        <Model>instantcom0</Model>
+        <AIValue>3</AIValue>
+    </Culture>
+    <Culture ID="Cultural Insurrection">
+        <DisplayName>Cultural Insurrection</DisplayName>
+        <Cost>1200</Cost>
+        <Description>Enables us to effectively pursue a strategy of inciting aliens to rebel.</Description>
+        <Details>Once the citizens begin to feel like they can no longer relate to their native governments, we need to provide them with the means to non-violently rebel against those governments. In this way, we can pick off their civilization one planet at a time.</Details>
+        <Requires>Xeno Cultural Trends</Requires>
+        <Category>Culture</Category>
+        <CultureAbility>5</CultureAbility>
+        <Model>instantcom0</Model>
+        <AIValue>3</AIValue>
+    </Culture>
+    <Culture ID="Cultural Conquest">
+        <DisplayName>Cultural Conquest</DisplayName>
+        <Cost>1500</Cost>
+        <Description>Provides the ultimate tools necessary to conquer another culture.</Description>
+        <Details>Why bother to conquer a culture through brute force when it can be done so much more expediently from the inside by its own citizens? No muss, no fuss.</Details>
+        <Requires>Cultural Insurrection</Requires>
+        <Category>Culture</Category>
+        <CultureAbility>10</CultureAbility>
+        <Model>instantcom0</Model>
+        <AIValue>3</AIValue>
+    </Culture>
+    <Weapons ID="Beam Weapon theory">
+        <DisplayName>Beam Weapon Theory</DisplayName>
+        <Cost>100</Cost>
+        <Description>Allows us to begin researching beam weapons.</Description>
+        <Details>Since our initial contact with the Arceans, we have mostly focused on missile and mass driver technologies. However, there are reports that the Drengin Empire has begun using beam weapons to carve through armor and point defenses, and we too must begin considering this tactic to remain militarily competitive.</Details>
+        <Category>Beam</Category>
+        <Requires>Space Weapons</Requires>
+        <Model>phase10</Model>
+        <AIValue>10</AIValue>
+    </Weapons>
+    <Weapons ID="Space Militarization">
+        <DisplayName>Space Militarization</DisplayName>
+        <Cost>50</Cost>
+        <Description>Starts us down the path of arming and defending our ships.</Description>
+        <Details>Space is big. Really quite absolutely huge. It's so big that one might argue that it has some sort of inferiority complex. It's as if it's just saying, "Hey, look at me, I'm BIG!" Its bigness gives rise to all kinds of problems for us.
+
+		One of those problems is that it's big enough to contain other intelligent life forms.  We use the term intelligent loosely, for no matter how big the universe is, there are other beings who will want what you have. Unless we plan to hand it over, we will need to defend ourselves. This comes in the form of putting things on our ships that keep them from being damaged, as well as putting things on them that will cause harm to our enemy's ships.
+
+		And so that is where space militarization comes in. Now we can go down the path to researching weapons and defenses for our vessels.</Details>
+        <Category>Military</Category>
+        <Requires>Galactic Warfare</Requires>
+        <MilitaryProductionAbility>10</MilitaryProductionAbility>
+        <Model>phaser0</Model>
+        <AIValue>20</AIValue>
+    </Weapons>
+    <Weapons ID="Galactic Warfare">
+        <DisplayName>Galactic Warfare</DisplayName>
+        <Cost>25</Cost>
+        <Description>An international consortium on how dangerous space really is.</Description>
+        <Details>Once we believed we were the only intelligent life out there. Or well, maybe not the only intelligent life but the only intelligent life we'd ever have to deal with. Then came the star gates, and while we knew there was intelligent life out there that could potentially be considered dangerous or be conquered by us, it wasn't really feasible.
+
+		Today at the international consortium, we have concluded the necessity of setting up a research center to start pondering what to do about Hyperdrive. The next step is space militarization which will take us from theory to engineering.</Details>
+        <Category>Military</Category>
+        <MilitaryProductionAbility>10</MilitaryProductionAbility>
+        <Requires>None</Requires>
+        <Model>event60</Model>
+        <AIValue>10</AIValue>
+    </Weapons>
+    <Weapons ID="Space Weapons">
+        <DisplayName>Space Weapons</DisplayName>
+        <Cost>150</Cost>
+        <Description>Allows us to begin researching weapons.</Description>
+        <Details>Space is not a friendly place. It's unfriendly to the extreme. First, if you try to take a stroll around in it, you'll die. Which, needless to say, could be considered rather rude. But even if you manage to wade around in space inside a hollowed out piece of metal, you are bound to run into others, wading around in their pieces of hollowed out metal, trying to kill you. To that end, we have come up with some thoughts on weapons.
+
+		We've come up with three basic types of weapons. First, you've got mass drivers. Bullets are mass drivers. We've been using them for a long time. Cannons in space and all that. The second type is missile technology. We know about missiles: explosive charges put on the end of some sort of guided propulsion. Very good stuff. Lastly, there's beam weapons. Beam weapons we have some idea of as well:  Shoot streams of energy into the enemy's ship and hope it blows it up.
+
+		So our next step is to focus on those three areas and start getting some weapons - for self-defense of course.</Details>
+        <Category>Military</Category>
+        <Requires>Space Militarization</Requires>
+        <Model>event80</Model>
+        <AIValue>10</AIValue>
+    </Weapons>
+    <Weapons ID="Mass Driver Theory">
+        <DisplayName>Mass Driver Theory</DisplayName>
+        <Cost>100</Cost>
+        <Description>Allows us to begin researching mass driver weapons.</Description>
+        <Details>Mass drivers involve pushing high density projectiles (bullets) against our opponent's armor. We are now ready to move down this track.</Details>
+        <Category>MD</Category>
+        <Requires>Space Weapons</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>10</AIValue>
+    </Weapons>
+    <Weapons ID="Missile Weapon Theory">
+        <DisplayName>Missile Weapon Theory</DisplayName>
+        <Cost>100</Cost>
+        <Description>Allows us to begin researching missile weapons.</Description>
+        <Details>Missiles differ from mass drivers in a critical area - they contain explosive warheads. They do their damage not from the impact but from the energy they release that is stored as part of the missile.</Details>
+        <Category>Missile</Category>
+        <Requires>Space Weapons</Requires>
+        <Model>photons0</Model>
+        <AIValue>10</AIValue>
+    </Weapons>
+    <Defenses ID="StarshipDefenses">
+        <DisplayName>Starship Defenses</DisplayName>
+        <Cost>50</Cost>
+        <Description>Gives us access to technologies that will help us put defenses on our ships.</Description>
+        <Details>Just waiting for us out in the depths are space are hostile aliens armed with electric death bent on wiping us out. Some say that a good defense is a strong offense, but those people aren't here right now are they? No. They're probably out there, trying to attack people only to realize that sometimes a good defense is actually a good defense. Equipping our ships with defensive technologies will help them survive the hostile environments of space and more importantly, lower the insurance costs on our ships.
+
+		We've got three types of defenses in mind. You've got good old-fashioned armor. You know, like what knights used to wear but better. Various composite materials that we put on our ships that help us absorb damage, particularly from high-density attacks such as mass drivers. We've also theorized about energy based defenses called shields. These "shields" would essentially act as an energy field around our ships that absorb damage, particularly from energy based attacks such as beam weapons. And lastly, there's point defense. Not a very good name is it? Point defense? Marketing is working on that. I prefer to call it "Anti-Missile Defense" myself but whatever. Point defense is designed to shoot out small bits to knock out fragile weapons with explosive heads like missiles, and protect us from getting hit in the first place.
+
+		Now that we've thought of these wonderful defenses, we must start researching them individually. Which is good! Well, good for us in the defense research community who need the research grants.</Details>
+        <Category>Military</Category>
+        <DefenseAbility>10</DefenseAbility>
+        <Requires>Space Militarization</Requires>
+        <Model>bistront0</Model>
+        <AIValue>15</AIValue>
+    </Defenses>
+    <Defenses ID="Armor Theory">
+        <DisplayName>Armor Theory</DisplayName>
+        <Cost>80</Cost>
+        <Description>Allows us to begin researching various types of armor.</Description>
+        <Details>Armor is good. Armor keeps us from going "blooie" when someone shoots at us. Or throws a rock at us. Or when we run into space debris, which can happen. Yep, all kinds of bad things can happen out here in the cold, black depths of space. All alone. Except for the other species who've decided they'd rather see us dead. Yep. All kinds of hazards out here. Is anyone else cold? Let's get some lights on, shall we? I want my mommy.</Details>
+        <Category>Armor</Category>
+        <Requires>StarshipDefenses</Requires>
+        <Model>controlgrav0</Model>
+        <AIValue>15</AIValue>
+    </Defenses>
+    <Defenses ID="Missile Defense Theory">
+        <DisplayName>Missile Defense Theory</DisplayName>
+        <Cost>80</Cost>
+        <Description>Allows us to begin researching various types of missile defenses.</Description>
+        <Details>Missile defense is good. Nobody enjoys taking an explosive warhead up the ol' exhaust port. Helps keep down on funeral expenses too.</Details>
+        <Category>PD</Category>
+        <Requires>StarshipDefenses</Requires>
+        <Model>deflector0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Shield Defense Theory">
+        <DisplayName>Shield Defense Theory</DisplayName>
+        <Cost>80</Cost>
+        <Description>Allows us to begin researching various types of shield defenses.</Description>
+        <Details>Shield defense is good. It keeps us from getting hit with stuff. And junk. Look, marketing has the day off and someone had to finish the description.</Details>
+        <Category>Shields</Category>
+        <Requires>StarshipDefenses</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Logistics ID="Basic Logistics">
+        <DisplayName>Basic Logistics</DisplayName>
+        <Cost>150</Cost>
+        <Description>Improves our overall logistics ability which allows for more ships in fleets.</Description>
+        <Details>The ability to put more ships in our fleets and support more starbases will give us a critical strategic advantage. There is power in numbers! Also it will prevent us from feeling too lonely out in space.</Details>
+        <LogisticsAbility>3</LogisticsAbility>
+        <Requires>Xeno Engineering</Requires>
+        <Category>Logistics</Category>
+        <Model>coldfusion0</Model>
+        <AIValue>30</AIValue>
+    </Logistics>
+    <Logistics ID="Enhanced Logistics">
+        <DisplayName>Enhanced Logistics</DisplayName>
+        <Cost>800</Cost>
+        <Description>Bigger fleets, more starbases.</Description>
+        <Details>We are getting better at being able to manage and re-supply groups of ships as well as starbases. We can now support additional ships in a fleet.</Details>
+        <LogisticsAbility>6</LogisticsAbility>
+        <Requires>Basic Logistics</Requires>
+        <Category>Logistics</Category>
+        <Model>controlgrav0</Model>
+        <AIValue>25</AIValue>
+    </Logistics>
+    <Logistics ID="Advanced Logistics">
+        <DisplayName>Advanced Logistics</DisplayName>
+        <Cost>2500</Cost>
+        <Description>Even bigger fleets, even more starbases.</Description>
+        <Details>Management is like playing a strategy game. You have to think quickly and make precise moves or bad things happen. Our advanced logistics allow us to maintain even more fleets and starbases, proving that playing video games all day doesn't rot your brain.</Details>
+        <LogisticsAbility>9</LogisticsAbility>
+        <Requires>Enhanced Logistics</Requires>
+        <Category>Logistics</Category>
+        <Model>phase30</Model>
+        <AIValue>20</AIValue>
+    </Logistics>
+    <Logistics ID="Expert Logistics">
+        <DisplayName>Expert Logistics</DisplayName>
+        <Cost>3500</Cost>
+        <Description>Still bigger fleets, still more starbases.</Description>
+        <Details> What can we really add here except to say that there is great power in numbers. The power to overwhelm your enemies. The power to intimidate others into becoming allies.</Details>
+        <LogisticsAbility>12</LogisticsAbility>
+        <Requires>Advanced Logistics</Requires>
+        <Category>Logistics</Category>
+        <Model>controlgrav0</Model>
+        <AIValue>12</AIValue>
+    </Logistics>
+    <Logistics ID="Ultimate Logistics">
+        <DisplayName>Ultimate Logistics</DisplayName>
+        <Cost>5000</Cost>
+        <Description>Yes, bigger fleets. Yes, more starbases.</Description>
+        <Details>We are like the popular coffee shop in that we are now on every corner. Plus since space in curved, you could say it's all one big corner. We're everywhere. Get used to it.</Details>
+        <LogisticsAbility>15</LogisticsAbility>
+        <Requires>Expert Logistics</Requires>
+        <Category>Logistics</Category>
+        <Model>controlgrav0</Model>
+        <AIValue>10</AIValue>
+    </Logistics>
+    <Logistics ID="Basic Life Support">
+        <DisplayName>General Life Support</DisplayName>
+        <Cost>50</Cost>
+        <Description>Enables ships that aren't gigantic in size to travel further.</Description>
+        <Details>Sure, colony ships can travel because we have massive, inefficient systems on their hulking frames to do that. But what about ships that aren't gigantic? That's where basic life support comes in: smaller ships now have the ability to sustain life over longer traveling periods.</Details>
+        <Model>phase40</Model>
+        <RangeAbility>20</RangeAbility>
+        <Requires>Basic Logistics</Requires>
+        <Category>Range</Category>
+        <AIValue>15</AIValue>
+    </Logistics>
+    <Logistics ID="Extended Life Support">
+        <DisplayName>Extended Life Support</DisplayName>
+        <Cost>500</Cost>
+        <Description>Better life support systems for ships.</Description>
+        <Details>Wouldn't things be grand if there were better life support systems for the people on our ships? I swear, sometimes R and D can't see the forest for the trees.</Details>
+        <Model>controlgrav0</Model>
+        <AIValue>21</AIValue>
+        <RangeAbility>40</RangeAbility>
+        <Requires>Basic Life Support</Requires>
+        <Category>Range</Category>
+    </Logistics>
+    <Logistics ID="Advanced Life Support">
+        <DisplayName>Advanced Life Support</DisplayName>
+        <Cost>2000</Cost>
+        <Description>Improved life support systems.</Description>
+        <Details>Our new and improved life support systems now allow you to breathe air! That's right folks, step right up and breathe in the beauty of recycled air, complete with that metallic taint you've been looking for.</Details>
+        <Model>phase40</Model>
+        <AIValue>10</AIValue>
+        <RangeAbility>50</RangeAbility>
+        <Requires>Extended Life Support</Requires>
+        <Category>Range</Category>
+    </Logistics>
+    <Logistics ID="Ultra Life Support">
+        <DisplayName>Ultra Life Support</DisplayName>
+        <Cost>4000</Cost>
+        <Description>Supports life.</Description>
+        <Details>Rejected marketing slogans for this technology: "We support life. Do you? Would you like to?" and "We don't discriminate. We support life of all kinds." and "Buy this or die!"</Details>
+        <Model>controlgrav0</Model>
+        <AIValue>5</AIValue>
+        <RangeAbility>50</RangeAbility>
+        <Requires>Advanced Life Support</Requires>
+        <Category>Range</Category>
+    </Logistics>
+    <Industry ID="Xeno Factory Construction">
+        <DisplayName>Xeno Factory Construction</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Allows us to construct factories on alien worlds.</Description>
+        <Details>Now the aliens working in our factories really will be aliens! You get it? Hah! Oh the wit!</Details>
+        <Requires>XenoIndustrialTheory</Requires>
+        <Category>Manufacturing</Category>
+        <Model>event50</Model>
+        <AIValue>10</AIValue>
+    </Industry>
+    <Industry ID="XenoEconomics">
+        <DisplayName>Xeno Economics</DisplayName>
+        <Cost>200</Cost>
+        <Description>Allows us to begin researching planetary improvements that enhance the economic conditions on our colonies.</Description>
+        <Details>Improving our economic well-being on our home planet is something we are pretty good at. Running an interstellar economy is a very different thing. We have begun looking at how other cultures do it, deciding which tactics work best and integrating those into our economic system.</Details>
+        <Requires>PlanetaryImprovements</Requires>
+        <Category>Economics</Category>
+        <EconomicsAbility>10</EconomicsAbility>
+        <Model>event30</Model>
+        <AIValue>10</AIValue>
+    </Industry>
+    <Biology ID="PlanetaryImprovements">
+        <DisplayName>Planetary Improvements</DisplayName>
+        <Cost>100</Cost>
+        <Description>Enables us to build factories, farms, and other industrial items on alien worlds.</Description>
+        <Details>Alien worlds provide new challenges to the industrial and farming trades. Different soils, climates and gravities all have their effect on what and how we build. With this new technology we are better able to face those challenges.</Details>
+        <Requires>Xeno Engineering</Requires>
+        <Category>Manufacturing</Category>
+        <SocialProductionAbility>10</SocialProductionAbility>
+        <MilitaryProductionAbility>10</MilitaryProductionAbility>
+        <ResearchAbility>10</ResearchAbility>
+        <Model>event10</Model>
+        <AIValue>15</AIValue>
+    </Biology>
+    <Industry ID="Manufacturing Centers">
+        <DisplayName>Manufacturing Centers</DisplayName>
+        <Cost>2000</Cost>
+        <Description>The next-generation factory.</Description>
+        <Details>A more powerful factory. Now we can produce and export more dog squeaky toys, or whatever it is we do around here.</Details>
+        <Requires>Xeno Factory Construction</Requires>
+        <Category>Manufacturing</Category>
+        <Model>event70</Model>
+        <AIValue>10</AIValue>
+    </Industry>
+    <Biology ID="Xeno Farm Construction">
+        <DisplayName>Xeno Farm Construction</DisplayName>
+        <Cost>200</Cost>
+        <Description>Allows us to build farms on alien worlds.</Description>
+        <Details>Old McDonald had a farm...Eyey Eyey O...And on his farm he had a Khzithak...Eyey Eyey O...With a ARHHFAHHAAAAAAAAARRRGIIIAAA HELP AAAUUU HELP! IT'S GNAWING OFF MY...</Details>
+        <Requires>PlanetaryImprovements</Requires>
+        <Category>Farming</Category>
+        <Model>event80</Model>
+        <AIValue>20</AIValue>
+    </Biology>
+    <Biology ID="Xeno Farm Construction II">
+        <DisplayName>Xeno Farm Construction II</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Allows us to build more advanced farms on alien worlds.</Description>
+        <Details>More food means more people, which means more people to tax.</Details>
+        <Requires>Xeno Farm Construction</Requires>
+        <Category>Farming</Category>
+        <Model>event50</Model>
+        <AIValue>15</AIValue>
+    </Biology>
+    <Biology ID="Xeno Farm Construction III">
+        <DisplayName>Xeno Farm Construction III</DisplayName>
+        <Cost>4000</Cost>
+        <Description>Allows us to build even more advanced farms on alien worlds.</Description>
+        <Details>High quality, plentiful food equals more people and a broader tax base, plus higher morale.</Details>
+        <Requires>Xeno Farm Construction II</Requires>
+        <Category>Farming</Category>
+        <Model>event50</Model>
+        <AIValue>5</AIValue>
+    </Biology>
+    <Industry ID="XenoIndustrialTheory">
+        <DisplayName>Xeno Industrial Theory</DisplayName>
+        <Cost>200</Cost>
+        <Description>Allows us to start researching planetary improvements, improvements to logistics, and new types of hulls for our ships.</Description>
+        <Details>We want to build things on planets: farms, banks, mines, factories, etc. No problem right? Just, you know, go build stuff. Not so fast! For the most part, key materials have to be shipped to build these things. It's not like colony ships are equipped with all the refining capacity needed to just start building factories and labs and the like.
+
+		What we have researched here is more of a logistical battle plan on how to organize and transport the needed materials to build a whole range of planetary improvements.
+
+		In addition, we will want to be able to improve our logistics. Better logistics means cheaper starbases and bigger fleets. And as if that wasn't enough to make this a terrific research path, industrial theory will lead us to bigger and better types of hulls.</Details>
+        <Category>Economics</Category>
+        <SocialProductionAbility>10</SocialProductionAbility>
+        <Requires>PlanetaryImprovements</Requires>
+        <Model>event50</Model>
+        <AIValue>5</AIValue>
+    </Industry>
+    <Industry ID="Xeno Engineering">
+        <DisplayName>Xeno Engineering</DisplayName>
+        <Cost>50</Cost>
+        <Description>Allows us to consider how we are going to actually handle the construction of colonies and their support.</Description>
+        <Details>Oh sure, let's just send a big old colony ship to some distant world with half a million people on board stuffed into little containers and it'll be alright. Not likely. Even if we choose nice worlds to colonize, half a million people would quickly starve to death and die off before they can even think about how a colony would support itself in the short-term. That's where Xeno Engineering comes in. We have put together a small set of basic technologies that will help a colony survive and even prosper.</Details>
+        <Category>Economics</Category>
+        <SocialProductionAbility>10</SocialProductionAbility>
+        <Requires>None</Requires>
+        <Model>event50</Model>
+        <AIValue>5</AIValue>
+    </Industry>
+    <Industry ID="Xeno Bank Construction">
+        <DisplayName>Xeno Bank Construction</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Allows us to build banks on alien worlds.</Description>
+        <Details>Think it's trivial to build an interstellar banking network where money from the home world is instantly available on alien worlds? Just don't complain abut the ATM fees.</Details>
+        <Category>Economics</Category>
+        <EconomicsAbility>5</EconomicsAbility>
+        <Requires>Xeno Trade Centers</Requires>
+        <Model>morph0</Model>
+        <AIValue>5</AIValue>
+    </Industry>
+    <Industry ID="Galactic Stock Exchanges">
+        <DisplayName>Galactic Stock Exchanges</DisplayName>
+        <Cost>2000</Cost>
+        <Description>Allows us to build stock exchanges on our worlds.</Description>
+        <Details>It's not easy to build an interstellar stock exchange, but we've got it down pat. We've got the whole insider trading, tax games, everything all set up now.</Details>
+        <Category>Economics</Category>
+        <Requires>Xeno Bank Construction</Requires>
+        <Model>event50</Model>
+        <AIValue>5</AIValue>
+    </Industry>
+    <Industry ID="Industrial Sector">
+        <DisplayName>Industrial Sector</DisplayName>
+        <Cost>4000</Cost>
+        <Description>More, better factories!</Description>
+        <Details>More factories, less slave labor. Well, the first part is true.</Details>
+        <Category>Manufacturing</Category>
+        <Requires>Manufacturing Centers</Requires>
+        <Model>event50</Model>
+        <AIValue>5</AIValue>
+    </Industry>
+    <Biology ID="Soil Enhancement">
+        <DisplayName>Soil Enhancement</DisplayName>
+        <Cost>400</Cost>
+        <Description>Allows us to take marginal lands and make them productive.</Description>
+        <Details>The other civilization leaders said I was daft to build a castle on a swamp, but I built it all the same, just to show 'em. It sank into the swamp. So, I built a second one. That sank into the swamp. So, I built a third one. That burned down, fell over, then sank into the swamp, but the fourth one...stayed up! So now you can do the same! Good luck to ye!</Details>
+        <Category>Terraforming</Category>
+        <Requires>PlanetaryImprovements</Requires>
+        <Model>terraform0</Model>
+        <AIValue>25</AIValue>
+    </Biology>
+    <Biology ID="Habitat Improvement">
+        <DisplayName>Habitat Improvement</DisplayName>
+        <Cost>1500</Cost>
+        <Description>Allows us to take poor lands and make them productive.</Description>
+        <Details>Now we can drain swamps into deserts and make it useful for farming. It works, we swear.</Details>
+        <Category>Terraforming</Category>
+        <Requires>Soil Enhancement</Requires>
+        <Model>terraform0</Model>
+        <AIValue>25</AIValue>
+    </Biology>
+    <Biology ID="Terraforming">
+        <DisplayName>Terraforming</DisplayName>
+        <Cost>3000</Cost>
+        <Description>Allows us to take useless lands and make them useful.</Description>
+        <Details>The Genesis effect er, we mean the terraforming planetary improvement allows us to bring life, from lifelessness says Dr. Carol Markus.</Details>
+        <Category>Terraforming</Category>
+        <Requires>Habitat Improvement</Requires>
+        <Model>terraform0</Model>
+    </Biology>
+    <Computing ID="Basic Miniaturization">
+        <DisplayName>Basic Miniaturization</DisplayName>
+        <Cost>100</Cost>
+        <Description>This allows us to make smaller components which lets us put more on ships.</Description>
+        <Details>Sometimes smaller is better. At least, that's what I keep being told.</Details>
+        <Category>Miniaturization</Category>
+        <MiniaturizationAbility>10</MiniaturizationAbility>
+        <Requires>Advanced Computing</Requires>
+        <Model>nanometal0</Model>
+        <AIValue>20</AIValue>
+    </Computing>
+    <Computing ID="Enhanced Miniaturization">
+        <DisplayName>Enhanced Miniaturization</DisplayName>
+        <Cost>500</Cost>
+        <Description>This allows us to make even smaller components which lets us put even more on ships.</Description>
+        <Details>A spokesperson for the Hygerion Technology Center had this to say on the new Miniaturization technology:
+
+		"Remember Miniaturization? It was pretty great wasn't it? I mean, with the making things smaller and stuff and junk. Well, Enhanced Miniaturization is like, you know, way way better. The reason it's better is because it's enhanced. This is quite different from regular Miniaturization which is, as we all now know, not enhanced."
+
+`		In related news, stock in Hygerion fell 25 points today in heavy trading...
+		</Details>
+        <Category>Miniaturization</Category>
+        <MiniaturizationAbility>15</MiniaturizationAbility>
+        <Requires>Basic Miniaturization</Requires>
+        <Model>nanometal0</Model>
+        <AIValue>26</AIValue>
+    </Computing>
+    <Computing ID="Advanced Miniaturization">
+        <DisplayName>Advanced Miniaturization</DisplayName>
+        <Cost>1000</Cost>
+        <Description>This allows us to make still smaller components which lets us put still more on ships.</Description>
+        <Details>Remember Enhanced Miniaturization? Well this is way better...you get the picture.</Details>
+        <Category>Miniaturization</Category>
+        <MiniaturizationAbility>15</MiniaturizationAbility>
+        <Requires>Enhanced Miniaturization</Requires>
+        <Model>nanometal0</Model>
+        <AIValue>25</AIValue>
+    </Computing>
+    <Computing ID="Expert Miniaturization">
+        <DisplayName>Expert Miniaturization</DisplayName>
+        <Cost>2500</Cost>
+        <Description>This allows us to make much smaller components which lets us put much more on ships.</Description>
+        <Details>We finally have the budget to hire experts, and now our miniaturization rokz0rs! W00t!</Details>
+        <Category>Miniaturization</Category>
+        <MiniaturizationAbility>15</MiniaturizationAbility>
+        <Requires>Advanced Miniaturization</Requires>
+        <Model>nanometal0</Model>
+        <AIValue>25</AIValue>
+    </Computing>
+    <Computing ID="Ultimate Miniaturization">
+        <DisplayName>Ultimate Miniaturization</DisplayName>
+        <Cost>5000</Cost>
+        <Description>This allows us to make size reduced components which lets us put more on ships.</Description>
+        <Details>This is as good as it gets. I mean, if it were any smaller, they'd be innies instead outies. If we were any smaller, our components would disappear entirely.</Details>
+        <Category>Miniaturization</Category>
+        <MiniaturizationAbility>20</MiniaturizationAbility>
+        <Requires>Expert Miniaturization</Requires>
+        <Model>nanometal0</Model>
+        <AIValue>15</AIValue>
+    </Computing>
+    <Computing ID="Supreme Miniaturization">
+        <DisplayName>Supreme Miniaturization</DisplayName>
+        <Cost>8000</Cost>
+        <Description>This allows us to make the smallest components possible which lets us put more on ships.</Description>
+        <Details>Remember how we said that the previous, incredible miniaturization technology was the best? Well, we lied. We do that you know. We lie. There's always something better as long as you're willing to keep paying us the big bucks. But really now, this is it. We tried this technology on a Kanzarian Wild Rider and he's gone. I mean, he's really gone. We're talking, lawsuit. We've looked all over the floor and Varnders here thinks that he may have felt something squish under his foot. So, even though there may be better techs out there, we're going to be tied up for years in the legal system dealing with this unpleasantness. But in the meantime, here you go.</Details>
+        <Category>Miniaturization</Category>
+        <MiniaturizationAbility>25</MiniaturizationAbility>
+        <Requires>Ultimate Miniaturization</Requires>
+        <Model>nanometal0</Model>
+        <AIValue>4</AIValue>
+    </Computing>
+    <Defenses ID="Deflectors">
+        <DisplayName>Deflectors</DisplayName>
+        <Cost>90</Cost>
+        <Description>Enables us to add deflectors to our ships.</Description>
+        <Details>The development of high-powered energy weapons, like photons and phasers, has gradually rendered physical missile devices obsolete. A new method of protection has been developed to prevent ships from being mauled by energy weapons. Deflectors use electromagnetic energy to shift the path of these energy weapons by a few degrees, limiting the damage they inflict.</Details>
+        <Category>Shields</Category>
+        <Requires>Shield Defense Theory</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>15</AIValue>
+    </Defenses>
+    <Defenses ID="EnhDeflectors">
+        <DisplayName>Enhanced Deflectors</DisplayName>
+        <Cost>130</Cost>
+        <Description>Better deflectors.</Description>
+        <Details>These are better than the standard deflectors in theory. In reality, they're not so much better but rather more optimized. So they protect the same but they use slightly less space. Deflectors are a rather bulky technology.</Details>
+        <Category>Shields</Category>
+        <Requires>Deflectors</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Culture ID="ExtremeEntertainment">
+        <DisplayName>Extreme Entertainment</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Enables us to build stadiums on our colonies.</Description>
+        <Details>By focusing our efforts on learning about the interests of other civilizations we have been able to come up with all kinds of great new forms of public entertainment.</Details>
+        <Requires>Xeno Entertainment</Requires>
+        <Category>Culture</Category>
+        <MoraleAbility>5</MoraleAbility>
+        <Model>event30</Model>
+        <AIValue>5</AIValue>
+    </Culture>
+    <Culture ID="ZeroGSportsArena">
+        <DisplayName>Zero G Sports Arenas</DisplayName>
+        <Cost>2500</Cost>
+        <Description>Enables the construction of Zero-G Sports Arenas.</Description>
+        <Details>There's nothing like sports in which gravity is missing. Players must balance all kinds of new skills in order to effectively coordinate their strategy on the field. Our people seem to love watching the games, which is good for morale.</Details>
+        <Requires>ExtremeEntertainment</Requires>
+        <Category>Culture</Category>
+        <MoraleAbility>5</MoraleAbility>
+        <Model>event30</Model>
+        <AIValue>5</AIValue>
+    </Culture>
+    <Culture ID="Virtual Reality Centers">
+        <DisplayName>Virtual Reality Centers</DisplayName>
+        <Cost>4500</Cost>
+        <Description>Enables the construction of Virtual Reality Centers.</Description>
+        <Details>Why "move around" just to "get stuff done" when you can sit there and live in a virtual reality in which all your dreams come true? Getting stuff done is overrated. So is reality.</Details>
+        <Requires>ZeroGSportsArena</Requires>
+        <MoraleAbility>5</MoraleAbility>
+        <Category>Culture</Category>
+        <Model>event30</Model>
+        <AIValue>5</AIValue>
+    </Culture>
+    <Defenses ID="ADvDeflectors">
+        <DisplayName>Advanced Deflectors</DisplayName>
+        <Cost>300</Cost>
+        <Description>Deflectors that use less space.</Description>
+        <Details>The problem with deflectors, as a technology, is that they're bulky. Deflectors simply use a lot of space on a ship. They have to actually generate an energy field around the ship to absorb damage from beam weapons. We continue to enhance our development techniques and the result has been these advanced deflectors.</Details>
+        <Category>Shields</Category>
+        <Requires>EnhDeflectors</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Superior Defs">
+        <DisplayName>Superior Deflectors</DisplayName>
+        <Cost>400</Cost>
+        <Description>Will let us add Deflectors Mark IV to our ships.</Description>
+        <Details>This is where deflectors top off. Simply put, this is about as small as we can make them. The next step is to make them roughly the same size but more powerful.</Details>
+        <Category>Shields</Category>
+        <Requires>ADvDeflectors</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Shields">
+        <DisplayName>Shields</DisplayName>
+        <Cost>500</Cost>
+        <Description>Will enable us to add shield based energy defenses to our ships.</Description>
+        <Details>While attending a retro-theme party based on television shows from Earth's 20th century, Brakham Nordstrom was struck by the idea that deflector technology could be extended to block different types of energy more effectively. With inverted tachyon pulses used in a steady stream, virtually all the output of energy weapons could be blocked, if only for a short period of time. This observation led to the formation of his company, General Dynometrics, which won the majority of the next set of planetary defense contracts. Unfortunately, the company went bankrupt before any subsequent research could be completed.</Details>
+        <Category>Shields</Category>
+        <Requires>Superior Defs</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>5</AIValue>
+    </Defenses>
+    <Defenses ID="Shields II">
+        <DisplayName>Shields II</DisplayName>
+        <Cost>600</Cost>
+        <Description>More advanced shields use less space while delivering the same level of protection.</Description>
+        <Details>It's not very glorious working on a derivative project, but former Mitrosoft engineer Kamber Valeth says that he's used to it. Throughout the years, Kamber has worked on a wide variety of technologies that were derivative of other companies before coming here to work on defense technologies. Shields Mark II aren't so much better than Mark I, but use slightly less space.</Details>
+        <Category>Shields</Category>
+        <Requires>Shields</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Shields III">
+        <DisplayName>Shields III</DisplayName>
+        <Cost>650</Cost>
+        <Description>Mark III shields use even less space than previous generations of shield technology.</Description>
+        <Details>Simply put, shields are pretty neat. They aren't terribly good in terms of saving space. But they do protect against damage quite well, particularly from beam weapons. The Mark III shield unit uses substantially less space on a ship than previous generations, thus allowing for more important items to be placed on board.</Details>
+        <Category>Shields</Category>
+        <Requires>Shields II</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Subspace Rebounder">
+        <DisplayName>Subspace Rebounder</DisplayName>
+        <Cost>200</Cost>
+        <Description>The Subspace Rebounder is expensive but provides enhanced protection.</Description>
+        <Details>The Subpsace Rebounder was found as a kind of fluke. While researching Shields III, one of our most brilliant scientists, who happens to be phsyically disabled, came up with the idea of an energy field that rebounds energy into a slightly different angle that allows our shield technology to have to absorb less of the blast.
+
+		In effect, it causes energy weapons to nearly miss. It is more expensive, by far, because it still requires the full cost of including shields, but it doesn't use any more space.</Details>
+        <Category>Shields</Category>
+        <Requires>Shields III</Requires>
+        <Model>sheilds0</Model>
+        <Alignment>Good</Alignment>
+        <DefenseAbility>5</DefenseAbility>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Barriers">
+        <DisplayName>Barriers</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Remember shields? These are even better!</Description>
+        <Details>Barriers are similar to shields in that they do create an energy field that disperses beam weapons. But barriers, unlike shields and deflectors before them, don't just deflect, they literally take some of that energy and make it part of the shield effect. This makes them far more effective.</Details>
+        <Category>Shields</Category>
+        <Requires>Shields III</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>14</AIValue>
+    </Defenses>
+    <Defenses ID="Barriers II">
+        <DisplayName>Barriers II</DisplayName>
+        <Cost>900</Cost>
+        <Description>Better than Barriers I.</Description>
+        <Details>No really, this time we have got barriers down pat.</Details>
+        <Category>Shields</Category>
+        <Requires>Barriers</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Barriers III">
+        <DisplayName>Barriers III</DisplayName>
+        <Cost>1000</Cost>
+        <Description>The final Barrier-based shield defense.</Description>
+        <Details>We have maxed out the barrier technology. However, our scientists theorize that they can now build force fields which are similar to barriers, except that they essentially block the beam weapon energy coming in nearly completely...</Details>
+        <Category>Shields</Category>
+        <Requires>Barriers II</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Dynamic Shielding">
+        <DisplayName>Dynamic Shielding</DisplayName>
+        <Cost>300</Cost>
+        <Description>Moving shields into a concentrated area where the beam weapon hits.</Description>
+        <Details>Dynamic shielding is considered by some to be impractical because of the costs in implementing it, but we want to make sure our military planners have this option. Dynamic shielding directs barriers to intersect beam weapons. It requires immensely powerful computers to manage - hence the cost - but provides superior defensive capability.</Details>
+        <Category>Shields</Category>
+        <Requires>Barriers III</Requires>
+        <Alignment>Good</Alignment>
+        <Model>sheilds0</Model>
+        <DefenseAbility>5</DefenseAbility>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Force Fields">
+        <DisplayName>Force Fields</DisplayName>
+        <Cost>1500</Cost>
+        <Description>Directed shield defense technology.</Description>
+        <Details>Force fields are similar to shields in many respects. However, unlike shields, force fields involve advanced computer technology to direct the full shield energy to protect the impact point on the ship from the beam impact. It is like maximizing one's shield protection at the very point where the beam attack is intersecting with the ship.</Details>
+        <Category>Shields</Category>
+        <Requires>Barriers III</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>14</AIValue>
+    </Defenses>
+    <Defenses ID="Advanced Force Fields">
+        <DisplayName>Advanced Force Fields</DisplayName>
+        <Cost>1500</Cost>
+        <Description>Improved force field defense.</Description>
+        <Details>Advanced, by the very name, means better than what we had before. Advanced force fields involve a more sophisticated computer to detect the weapon intersection point and tighten the field energy concentration at that point.</Details>
+        <Category>Shields</Category>
+        <Requires>Force Fields</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Superior Force Fields">
+        <DisplayName>Superior Force Fields</DisplayName>
+        <Cost>1500</Cost>
+        <Description>The ultimate force field protection.</Description>
+        <Details>This technology pinpoints a beam attack and focuses all of our defense shielding technology onto that quantum point to maximize our defensive value.</Details>
+        <Category>Shields</Category>
+        <Requires>Advanced Force Fields</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Invulnerability Field">
+        <DisplayName>Invulnerability Field</DisplayName>
+        <Cost>2000</Cost>
+        <Description>Provides nearly complete protection against all but the most advanced attacks.</Description>
+        <Details>Step right up, here's some "invulnerability" (trademark). The invulnerability field will provide nearly complete defense against all beam attacks. Only the most advanced beam attacks can pass through the nearly instant pin-point protection of an invulnerability field. Against other types of weapons, it still provides reasonable protection.</Details>
+        <Category>Shields</Category>
+        <Requires>Superior Force Fields</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Invulnerability Field II">
+        <DisplayName>Invulnerability Field II</DisplayName>
+        <Cost>2000</Cost>
+        <Description>Enhanced energy protection against beam weapons.</Description>
+        <Details>The roman numeral behind the name of the technology isn't for nothing. It means it's even better. Better as in, you know...look, would you just sign here so we can get our research grant? We have ideas for an even better version of this which we'll call...um...super...um...ultimate...invulnerability. We can now protect our ships better than ever.</Details>
+        <Category>Shields</Category>
+        <Requires>Invulnerability Field</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Ultimate Invulnerability">
+        <DisplayName>Ultimate Invulnerability</DisplayName>
+        <Cost>2500</Cost>
+        <Description>The most advanced beam protection available.</Description>
+        <Details>This is it. We're done. If you can find a better beam weapon protection system, you buy it, because this really is it. If you get shot, it's not our fault. It's because you didn't install the system correctly. I mean, this is really quite impressive. The angels sing when you enable this system on our ships.</Details>
+        <Category>Shields</Category>
+        <Requires>Invulnerability Field II</Requires>
+        <Model>sheilds0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Titanitum Armor">
+        <DisplayName>Titanium Armor</DisplayName>
+        <Cost>80</Cost>
+        <Description>This armor technology will help prevent damage from mini-balls and other mass driver technologies.</Description>
+        <Details>Titanium armor is our first crack at putting up defenses against mass drivers. Mass drivers are basically space-based bullets. That's an oversimplification since mass drivers are shot using a Hyperdrive assisted gun, so we are talking very, very fast bullets.
+
+		The only defense we have come up with so far is good old fashioned armor. Bullets go right through shields with only a modest impact and anti-missile defenses can only slow mass drivers down a bit. Armor is our best bet against the deadly mass driver weapons.</Details>
+        <Category>Armor</Category>
+        <Requires>Armor Theory</Requires>
+        <Model>bistront0</Model>
+        <AIValue>15</AIValue>
+    </Defenses>
+    <Defenses ID="Titanium Armor II">
+        <DisplayName>Titanium Armor II</DisplayName>
+        <Cost>190</Cost>
+        <Description>Improved defense against mass-driver weapons.</Description>
+        <Details>A further advance in mass-driver defense has been found. This new armor will help absorb damage from enemy weapons. It has a lesser effect on beam or missile weapons.</Details>
+        <Category>Armor</Category>
+        <Requires>Titanitum Armor</Requires>
+        <Model>bistront0</Model>
+        <AIValue>5</AIValue>
+    </Defenses>
+    <Defenses ID="Titanium Armor III">
+        <DisplayName>Titanium Armor III</DisplayName>
+        <Cost>300</Cost>
+        <Description>The top of the line Titanium based armor.</Description>
+        <Details>The very best that titanium-based armor can offer. Thanks to new compression techniques, we've managed to shrink this form of armor to the smallest size our universe will allow. Still not great against beam or missile weapons though.</Details>
+        <Category>Armor</Category>
+        <Requires>Titanium Armor II</Requires>
+        <Model>bistront0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Duranthium">
+        <DisplayName>Duranthium</DisplayName>
+        <Cost>400</Cost>
+        <Description>A new, superior type of armor against mass drivers.</Description>
+        <Details>Duranthium is a new type of armor that is made up of all kinds of composite metals and non-metals to form a material that is neither brittle nor particularly giving. Duranthium absorbs much of the kinetic energy from mass-drivers which vastly decreases the amount of damage that a given mass driver can do.</Details>
+        <Category>Armor</Category>
+        <Requires>Titanium Armor III</Requires>
+        <Model>bistront0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="Duranthium II">
+        <DisplayName>Duranthium II</DisplayName>
+        <Cost>400</Cost>
+        <Description>A superior form of duranthium.</Description>
+        <Details>This new type of armor improves the ability of ships equipped with it to sustain damage from mass-driver weapons.</Details>
+        <Category>Armor</Category>
+        <Requires>Duranthium</Requires>
+        <Model>bistront0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Duranthium III">
+        <DisplayName>Duranthium III</DisplayName>
+        <Cost>500</Cost>
+        <Description>The ultimate form of duranthium.</Description>
+        <Details>We've perfected our manufacturing of duranthium. This is the pinnacle of armor defense technology. At least for now...</Details>
+        <Category>Armor</Category>
+        <Requires>Duranthium II</Requires>
+        <Model>bistront0</Model>
+        <AIValue>15</AIValue>
+    </Defenses>
+    <Defenses ID="Tri-Strontium">
+        <DisplayName>Tri-Strontium</DisplayName>
+        <Cost>600</Cost>
+        <Description>A new type of material for defending against mass-driver attacks.</Description>
+        <Details>Our scientists have grown concerned about mass drivers that actually make use of warped space to enhance their damage. Tri-Strontium is a material so advanced it's a little bit frightening.
+
+		As a material, it makes use of three different types of strontium, a new type of composite material. When any of the three types of strontium is impacted by a hyper-dense mass (like a mass driver weapon) at high velocity, the other two layers vibrate at the molecular level to effectively rebound much of the force from the mass driver.</Details>
+        <Category>Armor</Category>
+        <Requires>Duranthium III</Requires>
+        <Model>bistront0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Arnorian Battle Armor">
+        <DisplayName>Arnorian Battle Armor</DisplayName>
+        <Cost>500</Cost>
+        <Description>Incredibly potent armor that is expensive but provides excellent protection against mass-drivers.</Description>
+        <Details>The Arnor are long gone, but this once vast interstellar empire has left some traces of its existence. We managed to find a vault on a distant moon that contained a vast amount of a material that looked like it was organic, but was clearly a type of armor. We have managed coax it in our lab to grow into a complete ship-scale set of armor.
+
+      		The armor is very expensive to create since the original stock of it was so small. We also won't be able to improve upon it since we have very little concept on how organic armor works and aren't likely to figure it out any time soon.</Details>
+        <Category>Armor</Category>
+        <Requires>Tri-Strontium</Requires>
+        <Model>bistront0</Model>
+        <AIValue>3</AIValue>
+        <HitpointsAbility>5</HitpointsAbility>
+        <Alignment>Good</Alignment>
+    </Defenses>
+    <Defenses ID="Enhanced Tri-Strontium">
+        <DisplayName>Enhanced Tri-Strontium</DisplayName>
+        <Cost>600</Cost>
+        <Description>Better than just plain old Tri-Strontium.</Description>
+        <Details>Now with a minty fresh scent!</Details>
+        <Category>Armor</Category>
+        <Requires>Tri-Strontium</Requires>
+        <Model>bistront0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Superior Tri-Strontium">
+        <DisplayName>Superior Tri-Strontium</DisplayName>
+        <Cost>600</Cost>
+        <Description>More protection from mass-driver weaponry.</Description>
+        <Details>This new type of armor improves the ability of ships equipped with it to sustain damage from mass-driver weapons.</Details>
+        <Category>Armor</Category>
+        <Requires>Enhanced Tri-Strontium</Requires>
+        <Model>bistront0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Kanvium">
+        <DisplayName>Kanvium</DisplayName>
+        <Cost>900</Cost>
+        <Description>Advanced armor against mass driver weapons.</Description>
+        <Details>Kanvium replaces Tri-Strontium armor. It's a whole new concept in armor technology.
+
+		The way Kanvium works is that when a high velocity mass impacts it, it actually causes a chain reaction at the molecular level in which the material becomes almost fluid and distributes the energy across the entire surface. When that energy is dissipated, the material returns to its previous state.</Details>
+        <Category>Armor</Category>
+        <Requires>Superior Tri-Strontium</Requires>
+        <Model>bistront0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Kanvium II">
+        <DisplayName>Kanvium II</DisplayName>
+        <Cost>1000</Cost>
+        <Description>We have learned to fabricate Kanvium armor in such a way that it uses less mass. We shall continue to do so.</Description>
+        <Details>This new type of armor improves the ability of ships equipped with it to sustain damage from mass-driver weapons.</Details>
+        <Category>Armor</Category>
+        <Requires>Kanvium</Requires>
+        <Model>bistront0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Kanvium III">
+        <DisplayName>Kanvium III</DisplayName>
+        <Cost>1000</Cost>
+        <Description>We have learned to fabricate Kanvium armor in such a way that it uses even less mass. We shall continue to do so.</Description>
+        <Details>Kanvium's ultimate evolution. It takes less space than ever before, but can still accept the beating we demand of it.</Details>
+        <Category>Armor</Category>
+        <Requires>Kanvium II</Requires>
+        <Model>bistront0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Duralthene Armor">
+        <DisplayName>Duralthene Armor</DisplayName>
+        <Cost>1500</Cost>
+        <Description>A new, superior form of mass-driver protection.</Description>
+        <Details>Duralthene armor is our prototype attempt to create a type of armor making use of a new element called Adamantium. Adamantium doesn't exist naturally. Rather, it is a derivative of an extremely rare element found occasionally in asteroids that have been recently struck by large comets.
+
+		Adamantium is the result of taking that rare material and subjecting it to an intense energy field. The result is a material that actually isn't completely in-sync with normal space. Duralthene armor is essentially taking the old Tri-Strontium alloy and coating it with trace amounts of this Adamantium material.
+
+		When a mass driver comes into contact with the Adamantium, the material of the mass driver is dissipated into the sub-dimensions of the Adamantium. It's difficult to explain but most of the mass is instantly moved out of our normal space and into a slightly out of sync dimension. The remaining material of the mass driver weapon is then absorbed through the traditional Tri-Strontium alloy.</Details>
+        <Category>Armor</Category>
+        <Requires>Kanvium III</Requires>
+        <Model>bistront0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Adamantium Armor">
+        <DisplayName>Adamantium Armor</DisplayName>
+        <Cost>1500</Cost>
+        <Description>The ultimate technology for protecting against mass drivers.</Description>
+        <Details>Adamantium armor is our full effort to create a material that isn't really all here. Adamantium armor, once formed, cannot be altered. It takes frightening amounts of energy to create from its natural elements. Once created, it holds onto its existence through an energy field that cycles through several different dimensions.
+
+		When Adamantium armor is struck by mass driver weapons, most of that mass driver shot gets teleported (literally) into several different dimensions. Only a fraction of the original mass is left to expend its kinetic energy against our ships.</Details>
+        <Category>Armor</Category>
+        <Requires>Duralthene Armor</Requires>
+        <Model>bistront0</Model>
+        <AIValue>5</AIValue>
+    </Defenses>
+    <Defenses ID="Adamantium II">
+        <DisplayName>Adamantium II</DisplayName>
+        <Cost>2000</Cost>
+        <Description>Provides a new ship component that increases the mass driver defense of ships equipped with it.</Description>
+        <Details>This new type of armor improves the ability of ships equipped with it to sustain damage from mass-driver weapons.</Details>
+        <Category>Armor</Category>
+        <Requires>Adamantium Armor</Requires>
+        <Model>bistront0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Ultimate Adamantium">
+        <DisplayName>Ultimate Adamantium</DisplayName>
+        <Cost>2500</Cost>
+        <Description>The final frontier for Adamantium armor.</Description>
+        <Details>Ultimate Adamantium represents this type of armor's ultimate evolution. From here it's on to bigger and better things.</Details>
+        <Category>Armor</Category>
+        <Requires>Adamantium II</Requires>
+        <Model>bistront0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Zero-Point Armor">
+        <DisplayName>Zero-Point Armor</DisplayName>
+        <Cost>2500</Cost>
+        <Description>The final defense against mass-driver weapons.</Description>
+        <Details>Zero-Point armor doesn't exist. That is, once it is attached to a ship and then enabled, it is difficult to even detect that it exists using normal sensors. It is not a stealth material (unfortunately). Rather, it is almost like wrapping a black hole around a ship.
+
+		Zero-Point armor doesn't create a gravitation field by default. Instead, it creates a reverse gravitational field based on reacting to force. The greater the force impact on the armor, the more reverse gravitational force is created. Zero Point armor has a nearly infinite potential for refracting kinetic mass impacts. The net effect is that when struck by mass driver weapons, they literally bounce off harmlessly.</Details>
+        <Category>Armor</Category>
+        <Requires>Ultimate Adamantium</Requires>
+        <Model>bistront0</Model>
+        <AIValue>5</AIValue>
+    </Defenses>
+    <Defenses ID="Chaff">
+        <DisplayName>Chaff</DisplayName>
+        <Cost>60</Cost>
+        <Description>Knock out missile weapons with bits of metal.</Description>
+        <Details>Sometimes the oldest technologies are the best. Someone shoots a missile at you, and the best defense is to shoot some metal out your gun hole to deflect the missile. By applying these to our ships, we will be able to defend against missile technology. However, against beam and mass driver attacks, it's not quite as useful. Simply put, mass drivers, don't really care about bits of metal.</Details>
+        <Category>PD</Category>
+        <Requires>Missile Defense Theory</Requires>
+        <Model>deflector0</Model>
+        <AIValue>15</AIValue>
+    </Defenses>
+    <Defenses ID="Smart Chaff">
+        <DisplayName>Smart Chaff</DisplayName>
+        <Cost>80</Cost>
+        <Description>Basic directed missile defense.</Description>
+        <Details>Smart Chaff isn't smart simply because it got a 4-year degree before becoming your defensive mechanism. Don't get us wrong, it did go to a 4-year university, but it was just a state school. What makes it smart is that it can direct itself at the incoming missile, thus providing better protection against the missile which allows it to use up a lot less space on our ship.</Details>
+        <Category>PD</Category>
+        <Requires>Chaff</Requires>
+        <Model>deflector0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="ECM">
+        <DisplayName>ECM</DisplayName>
+        <Cost>100</Cost>
+        <Description>Put missile weapons off course with electronic counter measures (ECM).</Description>
+        <Details>ECM is our first attempt to try to avoid being hurt by a missile by trying to interfere with its guidance. Obviously, ECM is nothing new in terms of airborne aircraft. What makes this ECM different is that they can interfere with missiles traveling at greater than light speed (at least relative to our ship).</Details>
+        <Category>PD</Category>
+        <Requires>Smart Chaff</Requires>
+        <Model>deflector0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="ECM II">
+        <DisplayName>ECM II</DisplayName>
+        <Cost>150</Cost>
+        <Description>Put missile weapons further off-course.</Description>
+        <Details>W00t. At least, that's what our scientists are saying with the discovery of ECM II. It's essentially the same as what we already had except for one critical difference - it's slightly smaller. And smaller, as we know, or should know, is not necessarily a bad thing.</Details>
+        <Category>PD</Category>
+        <Requires>ECM</Requires>
+        <Model>deflector0</Model>
+        <AIValue>4</AIValue>
+    </Defenses>
+    <Defenses ID="ECM III">
+        <DisplayName>ECM III</DisplayName>
+        <Cost>250</Cost>
+        <Description>The ultimate electronic counter-measure technology.</Description>
+        <Details>ECM III will force missiles to go wildly off-course in many instances, thus providing us exquisite protection against missiles of a similar generation. However, against mass-drivers and beam weapons it remains relatively ineffective.</Details>
+        <Category>PD</Category>
+        <Requires>ECM II</Requires>
+        <Model>deflector0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Point Defense">
+        <DisplayName>Point Defense</DisplayName>
+        <Cost>300</Cost>
+        <Description>Destroy missiles with smart mini-blasters.</Description>
+        <Details>This new technology provides a new anti-missile defense component that can be added to our ships.</Details>
+        <Category>PD</Category>
+        <Requires>ECM III</Requires>
+        <Model>deflector0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Telepathic Defense">
+        <DisplayName>Telepathic Defense</DisplayName>
+        <Cost>300</Cost>
+        <Description>Telepaths use their abilities to target enemy missiles.</Description>
+        <Details>Telepaths are incredibly rare and don't even exist in those vile civilizations who embrace evil. Only those who are able to show mercy and kindness would have this technology. The reason? Because telepaths are nearly always physically handicapped and would never survive in a society that doesn't value charity to the less fortunate.
+
+      		We have been lucky enough to find and train a significant number of telepaths who are eager to help us defend ourselves from the horrific natures of our enemies.</Details>
+        <Category>PD</Category>
+        <Requires>ECM III</Requires>
+        <Model>deflector0</Model>
+        <AIValue>3</AIValue>
+        <Alignment>Good</Alignment>
+        <DefenseAbility>5</DefenseAbility>
+    </Defenses>
+    <Defenses ID="Point Defense II">
+        <DisplayName>Point Defense II</DisplayName>
+        <Cost>400</Cost>
+        <Description>Improved micro-beam defense against missiles.</Description>
+        <Details>An improvement to the original point defense technology that continue to help defend our ships from missiles.</Details>
+        <Category>PD</Category>
+        <Requires>Point Defense</Requires>
+        <Model>deflector0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Point Defense III">
+        <DisplayName>Point Defense III</DisplayName>
+        <Cost>500</Cost>
+        <Description>Improved micro-beam defense against missiles.</Description>
+        <Details>This latest iteration of the point defense system packs as many mini-blasters as possible into a remarkably small space.</Details>
+        <Category>PD</Category>
+        <Requires>Point Defense II</Requires>
+        <Model>deflector0</Model>
+        <AIValue>5</AIValue>
+    </Defenses>
+    <Defenses ID="PD Combo">
+        <DisplayName>PD Combo</DisplayName>
+        <Cost>800</Cost>
+        <Description>Blast missiles with a combination of ECM and Point Defense.</Description>
+        <Details>The PD Combo employs an electronic system that guides enemy missiles into a path that is easier to be taken out with our point defenses.</Details>
+        <Category>PD</Category>
+        <Requires>Point Defense III</Requires>
+        <Model>deflector0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="PD Combo II">
+        <DisplayName>PD Combo II</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Blast more missiles with a combination of ECM and Point Defense.</Description>
+        <Details>Improved production methods have allowed us to shrink the size of our PD Combo system, allowing us to fit more of them on our ships.</Details>
+        <Category>PD</Category>
+        <Requires>PD Combo</Requires>
+        <Model>deflector0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="PD Combo III">
+        <DisplayName>PD Combo III</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Improved EC and point defense technology that helps against missile attack on ships.</Description>
+        <Details>It's amazing what can be accomplished when you chain programmers to their desks. The result is this refined PD Combo system.</Details>
+        <Category>PD</Category>
+        <Requires>PD Combo II</Requires>
+        <Model>deflector0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Droid Sentries">
+        <DisplayName>Droid Sentries</DisplayName>
+        <Cost>1500</Cost>
+        <Description>Surround our ships with mini-droids that sacrifice themselves to protect the ship.</Description>
+        <Details>A series of small droids that independently track incoming missiles and shoot them down.</Details>
+        <Category>PD</Category>
+        <Requires>PD Combo III</Requires>
+        <Model>deflector0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Droid Sentries II">
+        <DisplayName>Droid Sentries II</DisplayName>
+        <Cost>1500</Cost>
+        <Description>Improved smart droids who attack incoming missiles.</Description>
+        <Details>Improved programming has made these little troopers shoot down missiles with greater ability.</Details>
+        <Category>PD</Category>
+        <Requires>Droid Sentries</Requires>
+        <Model>deflector0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Droid Sentries III">
+        <DisplayName>Droid Sentries III</DisplayName>
+        <Cost>2000</Cost>
+        <Description>Superior smart droids that increase the defense of equipped ships to missile attack.</Description>
+        <Details>To those droids about to die, we salute you! Nobody can shoot down missiles like these droids.</Details>
+        <Category>PD</Category>
+        <Requires>Droid Sentries II</Requires>
+        <Model>deflector0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Aereon Missile Defense">
+        <DisplayName>Aereon Missile Defense</DisplayName>
+        <Cost>2500</Cost>
+        <Description>The ultimate missile defense.</Description>
+        <Details>The Aereon Missile Defense is a massively networked system to defend against missiles. New smart droid sentries surround our ships with new Hyper-Chaffe being thrown out by the droids, all guided by a new, advanced ECM system.</Details>
+        <Category>PD</Category>
+        <Requires>Droid Sentries III</Requires>
+        <Model>deflector0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Industry ID="Advanced Hulls">
+        <DisplayName>Advanced Hulls</DisplayName>
+        <Cost>210</Cost>
+        <Description>Allows us to begin researching larger types of hull designs.</Description>
+        <Details>Advanced hulls puts us on the path to construct larger sized hulls. Larger hulls means more powerful ships since they have more room to fit advanced weaponry and other modules.</Details>
+        <Requires>Basic Logistics</Requires>
+        <Category>Hull</Category>
+        <Model>lrgbuilding0</Model>
+        <AIValue>35</AIValue>
+    </Industry>
+    <Logistics ID="Medium Scale Building">
+        <DisplayName>Medium Scale Building</DisplayName>
+        <Cost>800</Cost>
+        <Description>Allows us to begin construction of medium hulled starships.</Description>
+        <Details>Being able to build larger ships that can move through warped space is non-trivial. Once you move beyond small-sized ships, you are looking at having to provide a sub-space field in order for them to maintain hull integrity.
+
+		Medium-sized ships are a significant advancement in our ability to design vessels. We can fit a lot more on a medium-sized ship and it can absorb a great deal more damage.</Details>
+        <Requires>Advanced Hulls</Requires>
+        <Category>Hull</Category>
+        <Model>lrgbuilding0</Model>
+        <AIValue>40</AIValue>
+    </Logistics>
+    <Logistics ID="Large Scale Building">
+        <DisplayName>Large Scale Building</DisplayName>
+        <Cost>2500</Cost>
+        <Description>Allows us to begin construction of large hulled starships.</Description>
+        <Details>Large hulled ships are the latest engineering masterpiece to come from our scientists. A subspace field helps hold the ship together and they can really take a beating in a fight.</Details>
+        <Requires>Superior Hulls</Requires>
+        <Category>Hull</Category>
+        <Model>lrgbuilding0</Model>
+        <AIValue>50</AIValue>
+    </Logistics>
+    <Logistics ID="Master Hull Building">
+        <DisplayName>Master Hull Building</DisplayName>
+        <Cost>2000</Cost>
+        <Description>Clears the way for massive hull designs.</Description>
+        <Details>To go beyond large hulled ships we need more than mere integrity fields to keep a ship together. This technology will allow us to do just that.
+
+		Moreover, master hull building allows our existing ships to take more damage.</Details>
+        <Requires>Large Scale Building</Requires>
+        <HitpointsAbility>15</HitpointsAbility>
+        <Category>Hull</Category>
+        <Model>lrgbuilding0</Model>
+        <AIValue>30</AIValue>
+    </Logistics>
+    <Logistics ID="Massive Scale Building">
+        <DisplayName>Massive Scale Building</DisplayName>
+        <Cost>4000</Cost>
+        <Description>Allows us to build huge hulled starships.</Description>
+        <Details>Now we can build truly huge, truly massive ships. Huge-hulled ships don't use sub-space fields anymore, they actually require a new type of energy field called the Q-field. The Q-field warps the space about the ship when it's traveling in order to hold it together. It is fantastically complicated to explain but allows for true capital ships to be created.</Details>
+        <Requires>Master Hull Building</Requires>
+        <Category>Hull</Category>
+        <Model>lrgbuilding0</Model>
+        <AIValue>30</AIValue>
+    </Logistics>
+    <Logistics ID="Reinforced Hull Design">
+        <DisplayName>Reinforced Hull Design</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Increases the number of hit points on our ships by 10%</Description>
+        <Details>We can take advantage of the new Q-field theory in order to increase the overall hull potential (HP - commonly called "hit points") of our ships.</Details>
+        <HitpointsAbility>10</HitpointsAbility>
+        <Requires>Master Hull Building</Requires>
+        <Category>Hull</Category>
+        <Model>lrgbuilding0</Model>
+        <AIValue>5</AIValue>
+    </Logistics>
+    <Logistics ID="Hardened Hull Design">
+        <DisplayName>Hardened Hull Design</DisplayName>
+        <Cost>2000</Cost>
+        <Description>Increases the number of hit points on our ships by 10%</Description>
+        <Details>Taking things up further we can bring Q-field theory up one final notch in order to improve our ship quality.</Details>
+        <HitpointsAbility>10</HitpointsAbility>
+        <Requires>Reinforced Hull Design</Requires>
+        <Category>Hull</Category>
+        <Model>lrgbuilding0</Model>
+        <AIValue>5</AIValue>
+    </Logistics>
+    <Logistics ID="Superior Hulls">
+        <DisplayName>Superior Hulls</DisplayName>
+        <Cost>500</Cost>
+        <Description>Allows us to begin researching even larger types of hull designs.</Description>
+        <Details>This gateway technology gives us the knowledge on how to be very very large hulls.</Details>
+        <Requires>Medium Scale Building</Requires>
+        <Category>Hull</Category>
+        <Model>lrgbuilding0</Model>
+        <AIValue>15</AIValue>
+    </Logistics>
+    <Weapons ID="MiniBalls">
+        <DisplayName>MiniBalls</DisplayName>
+        <Cost>75</Cost>
+        <Description>Provides space-based railguns.</Description>
+        <Details>Railguns remain potent weapons. When people think of mass drivers they think of bullets. But that's really not the full story.
+
+		MiniBalls are the term civilians give to railguns due to the fact that the projectiles are so small. Conceptually simple, railguns use an electric motor to accelerate conductive projectiles. Railguns have awesome piercing potential in all their forms. All mass driver weapons, at the end of the day, are merely forms of railguns.
+
+		MiniBalls make use of alumninum-based projectiles that are fired at a relatively low rate (5 to 10 rounds per minute). Despite this, against ships with little armor, this form of railgun can be devastating.</Details>
+        <Category>MD</Category>
+        <Requires>Mass Driver Theory</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>10</AIValue>
+    </Weapons>
+    <Weapons ID="MiniBalls II">
+        <DisplayName>MiniBalls II</DisplayName>
+        <Cost>100</Cost>
+        <Description>A superior form of railgun.</Description>
+        <Details>It was thought that mass-drivers would not be a weapon in interstellar warfare. A bullet, after all, travels at speeds measured by the speed of sound which, in space, is far too slow. What wasn't considered by many planners is that even though our opponents' ships travel fast, so do ours. In battle, our ships can close in enough to make use of their railguns with devastating consequences.
+
+         	MiniBalls II, as they are so delicately called, is essentially identical to the first generation railgun except that the electric motor used to accelerate the projectile is significantly smaller, allowing us to fit more onto our ships.</Details>
+        <Category>MD</Category>
+        <Requires>MiniBalls</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>10</AIValue>
+    </Weapons>
+    <Weapons ID="Mass Drivers">
+        <DisplayName>Mass Drivers</DisplayName>
+        <Cost>500</Cost>
+        <Description>More potent, efficient railgun weapon technology.</Description>
+        <Details>We have continued to refine our railgun technology. The new mass driver technology has allowed us to develop a new type of slug that has less resistance than the previous alumnium-based technology. This has allowed us to increase the rate of fire substantially which allows them to do more damage. However, this has been mostly offset by the fact that more rounds have to be stored on ships. The net
+		impact is that the new railgun uses a bit less space to achieve the same level of damage.
+
+        	Ships that do not have armor will find that railguns are a powerful weapon.</Details>
+        <Category>MD</Category>
+        <Requires>MiniBalls II</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Mass Drivers II">
+        <DisplayName>Mass Drivers II</DisplayName>
+        <Cost>800</Cost>
+        <Description>Even more potent railgun weapon technology.</Description>
+        <Details>As long as you're sending us money we'll keep improving. The Mark II is essentially the same as the first generation except they use less space.</Details>
+        <Category>MD</Category>
+        <Requires>Mass Drivers</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Mass Drivers III">
+        <DisplayName>Mass Drivers III</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Latest generation of mass-driver technology. Provides new railgun weapon.</Description>
+        <Details>These potent weapons take ever so slightly less space than the previous generation. In the words of our research coordinator, "w00t."
+
+		The railgun continues to be surprisingly effective in demonstrations. The new projectile prototype used during testing can pierce over 75 meters of solid steel. Against ships that have little or no serious armor this can be incredibly damaging.
+
+		Like previous generations, there continues to be the situation where we take three steps forward, two steps back. The new projectile, while more damaging per round, requires its own 3 Terrawatt generator.
+		</Details>
+        <Category>MD</Category>
+        <Requires>Mass Drivers II</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Singularity Driver">
+        <DisplayName>Singularity Driver</DisplayName>
+        <Cost>1200</Cost>
+        <Description>A new form of mass driver attack.</Description>
+        <Details>Singularity drivers take massive amounts of energy to create projectiles of incredible density. They are quite lethal on enemy ships.
+
+		Like all mass-drivers, they are still effectively a type of railgun. For political reasons, we have had to stop using the term "railgun" as many laypeople think of projectile based weaponry as being primitive in an age of energy weapons and the like.
+
+		But make no mistake, in space, the ability to toss a high density, high speed projectile that pierces most hulls on contact is worth investigating. The Singularity Driver is an impressive piece of engineering. While the rate of fire has been lost from previous generations, the Singularity Driver maintains a 20 to 30 rounds per minute ability with a projectile that is surrounded by ionized helium to form a bubble about the projectile. The projectile itself is heavily compressed in an ionized energy field that enables it to do massive damage to enemy ships.
+		</Details>
+        <Category>MD</Category>
+        <Requires>Mass Drivers III</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Singularity Driver II">
+        <DisplayName>Singularity Driver II</DisplayName>
+        <Cost>900</Cost>
+        <Description>Improved, lethal mass driver attack technology.</Description>
+        <Details>Singularity drivers take massive amounts of energy to create projectiles of incredible density. They are quite lethal on enemy ships.</Details>
+        <Category>MD</Category>
+        <Requires>Singularity Driver</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Singularity Driver III">
+        <DisplayName>Singularity Driver III</DisplayName>
+        <Cost>800</Cost>
+        <Description>Advanced and very lethal mass driver weapon that can rip enemy ships apart.</Description>
+        <Details>Thanks to the miracle of science, we've been able to shrink down the equipment required to make the Singularity Driver. The result is the ability to mount more of them on our ships.</Details>
+        <Category>MD</Category>
+        <Requires>Singularity Driver II</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Singularity Driver IV">
+        <DisplayName>Singularity Driver IV</DisplayName>
+        <Cost>1000</Cost>
+        <Description>The ultimate form of singularity driver. </Description>
+        <Details>Others said it couldn't be done, but a few extra billion proved them wrong with the Mark IV Singularity Driver.</Details>
+        <Category>MD</Category>
+        <Requires>Singularity Driver III</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Graviton Driver">
+        <DisplayName>Graviton Driver</DisplayName>
+        <Cost>2000</Cost>
+        <Description>A new form of mass-driver attack.</Description>
+        <Details>Graviton drivers actually create a new, unstable form of matter that would be right off the periodic table. A graviton field is created around the projectile in order to keep the hyper dense structure intact. When it comes into contact with the hull of another ship, the field collapses and the matter returns to its normal state.
+
+      		The process of the matter changing back to its normal state causes immense amounts of kinetic energy to be unleashed.</Details>
+        <Category>MD</Category>
+        <Requires>Singularity Driver IV</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Graviton Driver II">
+        <DisplayName>Graviton Driver II</DisplayName>
+        <Cost>2400</Cost>
+        <Description>An improved mass driver attack using graviton fields.</Description>
+        <Details>Improvements to the graviton field have made this Mark II driver possible.</Details>
+        <Category>MD</Category>
+        <Requires>Graviton Driver</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Graviton Driver III">
+        <DisplayName>Graviton Driver III</DisplayName>
+        <Cost>2500</Cost>
+        <Description>A superior form of graviton field based mass driver weapons.</Description>
+        <Details>Supercomputers have allowed us to tweak the graviton field even further, giving us the Mark III driver.</Details>
+        <Category>MD</Category>
+        <Requires>Graviton Driver II</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Graviton Driver IV">
+        <DisplayName>Graviton Driver IV</DisplayName>
+        <Cost>2600</Cost>
+        <Description>Ultimate form of graviton-based mass driver weaponry.</Description>
+        <Details>Thanks to economies of scale, and a healthy research budget, we've perfected the Graviton Driver.</Details>
+        <Category>MD</Category>
+        <Requires>Graviton Driver III</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Psyonic Shredder">
+        <DisplayName>Psionic Shredder</DisplayName>
+        <Cost>1000</Cost>
+        <Description>A deadly though expensive weapon system.</Description>
+        <Details>The Psionic Shredder is a particularly nasty weapon system which suits our desires...perfectly...
+
+        	It is a mass driver that upon impacts emits a psionic pulse throughout the ship causing both internal structure and long-term damage to living cell tissue. It is, arguably by the weak, a "terror" weapon, but it does the job nicely...</Details>
+        <Category>MD</Category>
+        <Requires>Graviton Driver III</Requires>
+        <Model>antimatdrive0</Model>
+        <Alignment>Evil</Alignment>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Quantum Driver">
+        <DisplayName>Quantum Driver</DisplayName>
+        <Cost>4000</Cost>
+        <Description>A powerful new mass driver weapon.</Description>
+        <Details>Quantum drivers actually make use of our knowledge of other dimensions. The Quantium driver creates a field that doesn't completely exist in our dimension. When it strikes an enemy ship, the field collapses and the mass that was previously in another dimension returns instantly creating great amounts of damage.</Details>
+        <Category>MD</Category>
+        <Requires>Graviton Driver IV</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Quantum Driver II">
+        <DisplayName>Quantum Driver II</DisplayName>
+        <Cost>4200</Cost>
+        <Description>New form of mass driver.</Description>
+        <Details>Have you ever tried to contemplate extra dimensions? It's enough to make your head spin! Thankfully all we need to know is that they help make our enemies go splat.</Details>
+        <Category>MD</Category>
+        <Requires>Quantum Driver</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Quantum Driver III">
+        <DisplayName>Quantum Driver III</DisplayName>
+        <Cost>4400</Cost>
+        <Description>Ultimate Quantium Driver mass driver weapon.</Description>
+        <Details>Analysis of the data from past use of the Quantum Driver has allowed us to refine our use of the dimensional field. What this means is that we can now fit more of these weapons onto our ships since they take up less space.</Details>
+        <Category>MD</Category>
+        <Requires>Quantum Driver II</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="HD Spike Driver">
+        <DisplayName>HD Spike Driver</DisplayName>
+        <Cost>5000</Cost>
+        <Description>High Density Spike Drivers - a new form of mass driver weapon.</Description>
+        <Details>Spike Drivers have been theorized for a long time but never thought to be practical. They require incredible amounts of energy in order to create. In essence, a Spike Driver is lot like sending a miniature dwarf star at an enemy.</Details>
+        <Category>MD</Category>
+        <Requires>Quantum Driver III</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="HD Spike Driver II">
+        <DisplayName>HD Spike Driver II</DisplayName>
+        <Cost>5200</Cost>
+        <Description>New form of spike driver weapon.</Description>
+        <Details>Thanks to advances in our power systems, we've been able to reduce the size required for the HD Spike Driver's generators.</Details>
+        <Category>MD</Category>
+        <Requires>HD Spike Driver</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="HD Spike Driver III">
+        <DisplayName>HD Spike Driver III</DisplayName>
+        <Cost>5300</Cost>
+        <Description>Superior form of mass driver weapon that causes great harm to enemy ships.</Description>
+        <Details>At the press conference announcing our new Mark III HD Spike Driver, several members of the audience thought we were talking about a new beverage. Apparently, they ended up in the wrong conference center during an all-night caffeine binge. In any case, this updated Spike Driver features more size reductions.</Details>
+        <Category>MD</Category>
+        <Requires>HD Spike Driver II</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="HD Spike Driver IV">
+        <DisplayName>HD Spike Driver IV</DisplayName>
+        <Cost>5800</Cost>
+        <Description>The ultimate Spike Driver weapon.</Description>
+        <Details>Shooting stars were once thought of as ways to make wishes come true on old Earth. On Drengi, they were viewed as potential ways to blast people. Turns out the Drengin were right, as the ultimate form of Spike Driver proves nicely.</Details>
+        <Category>MD</Category>
+        <Requires>HD Spike Driver III</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Neutrino Bullets">
+        <DisplayName>Neutrino Bullets</DisplayName>
+        <Cost>8000</Cost>
+        <Description>The ultimate mass-driver weaponry.</Description>
+        <Details>Neutrino bullets don't even exist. At least, they don't exist in our space-time continuum. The weapon itself is not made of neutrinos. Neutrinos are simply the evidence that this new form of weapon even exists. The mass involved is so immense that the weapons themselves could not be stored in our dimension on a ship, the mass would simply make the energy requirements for the ship to move too great.
+
+      		Instead, the weapons are held in a special field that exists outside our normal dimension. When fired, they make virtually no sound other than a weird "pluck" sound. When they come into contact with another significant mass, the weapon reforms from another dimension causing lethal damage.</Details>
+        <Category>MD</Category>
+        <Requires>HD Spike Driver IV</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Laser">
+        <DisplayName>Laser</DisplayName>
+        <Cost>75</Cost>
+        <Description>A very basic beam weapon.</Description>
+        <Details>Don't get your hopes up. Lasers are actually not very effective weapons. They are beam weapons which are useful in space where ships are firing great distances, but they aren't very powerful. Still, something is better than nothing.
+
+		The Laser series of weapons works through a series of weaponized mirror technology. Rushed into service in order to deal with the hostility of the galaxy, the energy (i.e., light) is refracted from the mirrors into a single "beam." Our technology in this area is currently quite limited as the mirrors tend to burn out readily.
+
+		The challenge for us is to find better materials for the mirrors so that more energy can be directed and combined. Since beam weapons are effectively instantaneous, the other issue that determines weapon effectiveness is the duration. Right now, lasers have a very short duration due to the fragility of the mirrors used.
+		</Details>
+        <Category>Beam</Category>
+        <Requires>Beam Weapon theory</Requires>
+        <Model>phaser0</Model>
+        <AIValue>10</AIValue>
+    </Weapons>
+    <Weapons ID="Laser II">
+        <DisplayName>Laser II</DisplayName>
+        <Cost>200</Cost>
+        <Description>Lasers that use up less space on a ship.</Description>
+        <Details>Lasers have a disadvantage against mass drivers and missiles in that they aren't very powerful and they're relatively expensive. But on the bright side, they use less space than missiles and mass drivers which means you can put more of them on your ship.</Details>
+        <Category>Beam</Category>
+        <Requires>Laser</Requires>
+        <Model>phaser0</Model>
+        <AIValue>10</AIValue>
+    </Weapons>
+    <Weapons ID="Laser III">
+        <DisplayName>Laser III</DisplayName>
+        <Cost>350</Cost>
+        <Description>More lasers. But now quite a bit smaller.</Description>
+        <Details>The Mark III laser is substantially smaller than previous generations allowing for more to be placed on a ship.</Details>
+        <Category>Beam</Category>
+        <Requires>Laser II</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Laser IV">
+        <DisplayName>Laser IV</DisplayName>
+        <Cost>400</Cost>
+        <Description>Smaller and cheaper than previous laser technologies.</Description>
+        <Details>The Mark IV laser is both smaller and cheaper than previous laser technologies.</Details>
+        <Category>Beam</Category>
+        <Requires>Laser III</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Laser V">
+        <DisplayName>Laser V</DisplayName>
+        <Cost>500</Cost>
+        <Description>The finale for laser weapon technologies...</Description>
+        <Details>The Mark V laser weapon is the pinnacle of laser weapon technology. It is smaller, cheaper, and while not really that important to most people, its housing assembly looks pretty darn cool. While lasers remain a fairly weak weapon, they open the door to other types of beam weapons such as the Plasma series which is twice as powerful.</Details>
+        <Category>Beam</Category>
+        <Requires>Laser IV</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Plasma Weapons">
+        <DisplayName>Plasma Weapons</DisplayName>
+        <Cost>1000</Cost>
+        <Description>A new form of beam weapon.</Description>
+        <Details>Plasma is actually a different type of matter. Matter exists in four states: solid, liquid, gas. Plasma is the fourth state. But plasma weapons are not mass driver weapons, not in the way we're using them.
+
+      		Early attempts at creating plasma weapons would have certainly placed them into the mass driver category. Plasma, unlike lasers, have significant mass. The damage from plasma is from heat damage, not kinetic energy transferral.
+
+      		The funny thing about our plasma weapons is that they really are fancier lasers. The plasma is encased in an immensely powerful energy field that ensures that the plasma is transferred nearly instantly (i.e., near light speed) to the intended target.
+
+      		The laser field helps keep the plasma from behaving like a gas. The net result is that a ship hit with a plasma based weapon will first have its hull damaged or ruptured through the plasma and then by the energy field around it damaging vital internal elements of the enemy ship.
+      		</Details>
+        <Category>Beam</Category>
+        <Requires>Laser V</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Plasma Weapons II">
+        <DisplayName>Plasma Weapons II</DisplayName>
+        <Cost>700</Cost>
+        <Description>Improved form of plasma weapon.</Description>
+        <Details>The biggest problem we've faced with weaponizing plasma is that plasma is a phase of matter and not energy. Making plasma behave like an energy stream requires immense amounts of power to manage. That power takes up a great deal of space.
+
+      		The new generation of plasma weapons aren't any more lethal, but they do take up less space, which in turn allows us to put more on our ships.</Details>
+        <Category>Beam</Category>
+        <Requires>Plasma Weapons</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Plasma Weapons III">
+        <DisplayName>Plasma Weapons III</DisplayName>
+        <Cost>800</Cost>
+        <Description>Ultimate plasma beam weapon.</Description>
+        <Details>We've gotten into the diminishing returns phase of plasma weapons. Simply put, plasma weapons are not ideal beam weapons because they have some mass (but not enough mass to make them good mass drivers).
+
+      		This new form of plasma weapon uses up far less energy than previous generations and hence can be placed onto our ships. Plasma Weapons III represents our state of the art in beam weapon technology.
+      		</Details>
+        <Category>Beam</Category>
+        <Requires>Plasma Weapons II</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Phasors">
+        <DisplayName>Phasors</DisplayName>
+        <Cost>2000</Cost>
+        <Description>A new, powerful beam weapon technology.</Description>
+        <Details>Phasors are a major break-thru in beam weapon technology. They require a very special crystal not found on our world and that cannot be manufactured (yet). By streaming energy through the crystal, a particular type of visible radition is directed as a beam towards a target.
+
+      		The radiation itself contains only sub-atomic particles that have a variety of effects (depeneding on how the energy is projected through the crystal) when it comes into contact with other materials.
+
+     		Phasors are incredibly powerful, deadly beam weapons.</Details>
+        <Category>Beam</Category>
+        <Requires>Plasma Weapons III</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Phasors II">
+        <DisplayName>Phasors II</DisplayName>
+        <Cost>1600</Cost>
+        <Description>Enhanced beam weapon technology.</Description>
+        <Details>Phasor, which stands for Phased Octanganel Refraction takes energy and sends it through a crystal. The crystals are somewhat rare and expensive to use. We have found that phasors are incredible in terms of weapons for soldiers and their use in space has been very effective.</Details>
+        <Category>Beam</Category>
+        <Requires>Phasors</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Psyonic Beam">
+        <DisplayName>Psionic Beam</DisplayName>
+        <Cost>900</Cost>
+        <Description>The Psionic Beam is a terrible weapon - it's wonderful. It's expensive to use but deadly.</Description>
+        <Details>There's nothing like a beam of pulsating death to keep the pitiful enemies of our great people in line.</Details>
+        <Category>Beam</Category>
+        <Requires>Phasors</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+        <Alignment>Evil</Alignment>
+    </Weapons>
+    <Weapons ID="Phasors III">
+        <DisplayName>Phasors III</DisplayName>
+        <Cost>1800</Cost>
+        <Description>Improved phased-based beam weapon technology.</Description>
+        <Details>We continue to find new ways to decrease the size requirements of phasor-based weapons. This new generation of phasors is somewhat smaller in size though no more lethal.</Details>
+        <Category>Beam</Category>
+        <Requires>Phasors II</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Phasors IV">
+        <DisplayName>Phasors IV</DisplayName>
+        <Cost>2000</Cost>
+        <Description>Improved beam weapon technology.</Description>
+        <Details>Beam emitter advances have brought about this newest generation of phasor.</Details>
+        <Category>Beam</Category>
+        <Requires>Phasors III</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Phasors V">
+        <DisplayName>Phasors V</DisplayName>
+        <Cost>2100</Cost>
+        <Description>Enhanced beam weapon.</Description>
+        <Details>Phasors just keep getting better and better, don't they?</Details>
+        <Category>Beam</Category>
+        <Requires>Phasors IV</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Phasors VI">
+        <DisplayName>Phasors VI</DisplayName>
+        <Cost>2200</Cost>
+        <Description>Superior form of beam weapon technology.</Description>
+        <Details>For the Mark VI phasor, we thought about adding some nice rainbow colors, but decided against it. It is a military weapon after all.</Details>
+        <Category>Beam</Category>
+        <Requires>Phasors V</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Phasors VII">
+        <DisplayName>Phasors VII</DisplayName>
+        <Cost>2400</Cost>
+        <Description>Ultimate phased-based beam weapon technology.</Description>
+        <Details>This is it. After six prior generations, the Mark VII phasor is the ultimate in phased-beam technology.</Details>
+        <Category>Beam</Category>
+        <Requires>Phasors VI</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Disruptors">
+        <DisplayName>Disruptors</DisplayName>
+        <Cost>4000</Cost>
+        <Description>New form of beam weapon technology.</Description>
+        <Details>Disruptors are very similar to phasors in most respects. We have been testing disruptors for ground-based combat for quite awhile and because they did not do as well as phasors, we didn't pursue it very aggressively.
+
+      		However, as a space based weapon, disruptors are somewhat more effective than phasors. Phasors are energy efficient. They are the weapon of elegance. Disruptors are more of a brute force weapon. In battles in space, brute force has an elegance of its own.</Details>
+        <Category>Beam</Category>
+        <Requires>Phasors VII</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Disruptors II">
+        <DisplayName>Disruptors II</DisplayName>
+        <Cost>3200</Cost>
+        <Description>Improved disruptor beam technology.</Description>
+        <Details>We continue to improve the disruptor space-based beam weapon technology to use less space and be more efficient.</Details>
+        <Category>Beam</Category>
+        <Requires>Disruptors</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Disruptors III">
+        <DisplayName>Disruptors III</DisplayName>
+        <Cost>3500</Cost>
+        <Description>Superior disruptor beam weapon technology.</Description>
+        <Details>Disruptors seem as though they should defy efficiency, and yet, here they are.</Details>
+        <Category>Beam</Category>
+        <Requires>Disruptors II</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Subspace Blaster">
+        <DisplayName>Subspace Blaster</DisplayName>
+        <Cost>6000</Cost>
+        <Description>New type of beam weapon.</Description>
+        <Details>Subspace Blasters are a beam weapon of particular lethality. Unlike Phasors and Disruptors that require a special crystal that is mined in very secret locations, Subspace Blasters rely on a new crystal engineered by our scientists. By making an idealized crystal, we have greater control over its damaging effects.</Details>
+        <Category>Beam</Category>
+        <Requires>Disruptors III</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Subspace Annihilator">
+        <DisplayName>Subspace Annihilator</DisplayName>
+        <Cost>5200</Cost>
+        <Description>New powerful beam weapon.</Description>
+        <Details>The Subspace Annihilator is the Subspace Blaster but with a newly engineered crystal that can inflict massive beam weapon damage.</Details>
+        <Category>Beam</Category>
+        <Requires>Subspace Blaster</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Doom Ray">
+        <DisplayName>Doom Ray</DisplayName>
+        <Cost>9000</Cost>
+        <Description>The ultimate beam weapon.</Description>
+        <Details>The Doom Ray is really several beam weapons at once. If we were to watch a Doom Ray hit an enemy ship in slow motion, you would first see the initial phased-based beam connection between the attacker and the defender. The effect is to get the Doom Ray into harmonic equality with the enemy ship.
+
+      		Once harmonic equality has been reached, the main Doom Ray itself is fired which has the effect of converting significant portions of the enemy ship into energy which creates a chain reaction across the ship. It is, literally, the ultimate beam weapon technology.</Details>
+        <Category>Beam</Category>
+        <Requires>Subspace Annihilator</Requires>
+        <Model>phaser0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Black Hole Gun">
+        <DisplayName>Black Hole Gun</DisplayName>
+        <Cost>8000</Cost>
+        <Description>Ultimate mass driver weapon.</Description>
+        <Details>We have previously experimented with mass driver technologies that are effectively like sending tiny white dwarf stars at our enemies. We have since discovered the Black Hole Gun. It fires projectiles that have an energy field about them that is so powerful that it warps space slightly from its own gravity soon after being fired.
+
+      		The black hole gun then rips apart enemy ships once it comes into contact with the enemy ship.
+      </Details>
+        <Category>MD</Category>
+        <Requires>Neutrino Bullets</Requires>
+        <Model>antimatdrive0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Stinger">
+        <DisplayName>Stinger</DisplayName>
+        <Cost>150</Cost>
+        <Description>Missile weapon technology.</Description>
+        <Details>The continuing challenge with space-based missile weapons has to do with speed. Missiles tend to cause damage because they nearly always hit exactly where you fire them due to their guidance systems.
+
+      		The Stinger missile is very expensive to construct but does twice as much damage as any other weapon class of a similar generation.
+
+      		The Stinger missile project has been a very controversal project within the political community. The idea of arming ships with high-yield warheads that could potentially be used against cities has created a great deal of resistance to the entire missile development project.
+
+      		One of the areas we have worked towards is to create warheads that are conventional in nature (i.e., non-nuclear, non-fusion based warheads). The Stinger, like all missile based systems, is very good against ships without defense. But missiles are also relatively cheap to defend against. They can be blocked with chaff or interfered with through electronic counter measures (ECM). They can also be literally shot down with point defenses.
+
+      		So while the advantage of missiles is that they cause more damage than other weapons, the technologies to counter them tend to be cheap. However, against enemies with little defense against missiles, the Stinger and we suspect its descendants will be quite lethal.
+      </Details>
+        <Category>Missile</Category>
+        <Requires>Missile Weapon Theory</Requires>
+        <Model>photons0</Model>
+        <AIValue>10</AIValue>
+    </Weapons>
+    <Weapons ID="Stinger II">
+        <DisplayName>Stinger II</DisplayName>
+        <Cost>300</Cost>
+        <Description>Improved missile-based ship weapon.</Description>
+        <Details>Our scientists continue to find new ways to make these marvelous missile weapons smaller so that we can fit more onto our ships.</Details>
+        <Category>Missile</Category>
+        <Requires>Stinger</Requires>
+        <Model>photons0</Model>
+        <AIValue>10</AIValue>
+    </Weapons>
+    <Weapons ID="Stinger III">
+        <DisplayName>Stinger III</DisplayName>
+        <Cost>400</Cost>
+        <Description>Enhanced missile weapon.</Description>
+        <Details>The Stinger III represents the latest generational upgrade to the Stinger based anti-ship technology. The guidance system is still radar-based, which is something we continue to try to work around.
+
+		However, the Stinger III's radar system is now local to the missile and requires no additional space on the ship. As a result, the Stinger III uses somewhat less space than its ancestors.</Details>
+        <Category>Missile</Category>
+        <Requires>Stinger II</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Stinger IV">
+        <DisplayName>Stinger IV</DisplayName>
+        <Cost>800</Cost>
+        <Description>Last generation of the Stinger-class missile weapon system.</Description>
+        <Details>Refinements in the explosive material we use gives us the ability to keep the same explosive yield while shrinking down the size of the missile itself.</Details>
+        <Category>Missile</Category>
+        <Requires>Stinger III</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Harpoon">
+        <DisplayName>Harpoon</DisplayName>
+        <Cost>1200</Cost>
+        <Description>A new form of missile weapon.</Description>
+        <Details>Harpoon class missile weapons make use of a new guidance system and improved warhead to do more damage to enemy ships.
+
+		The elimination of standard radar makes the Harpoon more effective against various kinds of countermeasures. The Harpoon also increases its range to over 1700km (the Stingers range was 1200km).
+
+		One of the biggest improvements in the Harpoon missile is that its new warhead causes a great deal more damage thanks to a new type of conventional explosive used.</Details>
+        <Category>Missile</Category>
+        <Requires>Stinger IV</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Harpoon II">
+        <DisplayName>Harpoon II</DisplayName>
+        <Cost>800</Cost>
+        <Description>Improved missile weapon technology.</Description>
+        <Details>Harpoon class missile weapons make use of a new guidance system and improved warhead to do more damage to enemy ships.</Details>
+        <Category>Missile</Category>
+        <Requires>Harpoon</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Harpoon III">
+        <DisplayName>Harpoon III</DisplayName>
+        <Cost>900</Cost>
+        <Description>Advanced missile weapon technology.</Description>
+        <Details>Much as we did for the Stinger missile system at its pinnacle, we've managed to shrink down the mass of the explosive material used for the Harpoon missile, while maintaining its ability to blow our enemies up.</Details>
+        <Category>Missile</Category>
+        <Requires>Harpoon II</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Pysonic Missile">
+        <DisplayName>Psionic Missile</DisplayName>
+        <Cost>600</Cost>
+        <Description>These vile weapons are cruel and damaging.</Description>
+        <Details>Our civilization understands that in war, there are no rules. Psionic weapons work by hitting the hull and putting out a psionic wavelength that damages the ship but causes the crew debilitating agony that never goes away. It doesn't necessarily kill, but they'll wish they were dead.</Details>
+        <Category>Missile</Category>
+        <Requires>Harpoon III</Requires>
+        <Alignment>Evil</Alignment>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Photonic Torpedo">
+        <DisplayName>Photonic Torpedo</DisplayName>
+        <Cost>1600</Cost>
+        <Description>New missile weapon technology.</Description>
+        <Details>Photonic torpedoes solve much of the problem of speed on previous missile generations. They act almost like bolts of energy but have a guided warhead within the energy field. The result is a weapon that is much faster but just as accurate as previous generation missile weapons.</Details>
+        <Category>Missile</Category>
+        <Requires>Harpoon III</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Photonic Torpedo II">
+        <DisplayName>Photonic Torpedo II</DisplayName>
+        <Cost>1200</Cost>
+        <Description>Improved Photonic-based missile technology.</Description>
+        <Details>By improving the guidance system, we've come up with these refined Photonic Torpedoes.</Details>
+        <Category>Missile</Category>
+        <Requires>Photonic Torpedo</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Photon Torpedo">
+        <DisplayName>Photon Torpedo</DisplayName>
+        <Cost>2400</Cost>
+        <Description>Next generation missile weapon.</Description>
+        <Details>Photon torpedoes are similar to Photonic weapons except that they make use of a new energy field to surround the warhead. The result is that the warhead supports variable yields.</Details>
+        <Category>Missile</Category>
+        <Requires>Photonic Torpedo II</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Photon Torpedo II">
+        <DisplayName>Photon Torpedo II</DisplayName>
+        <Cost>2800</Cost>
+        <Description>Superior photon-based missile weapon.</Description>
+        <Details>We have decreased the size necessary to generate the sub-space field about a photon torpedo. As a result, this missile weapon uses far less space.</Details>
+        <Category>Missile</Category>
+        <Requires>Photon Torpedo</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Photon Torpedo III">
+        <DisplayName>Photon Torpedo III</DisplayName>
+        <Cost>3000</Cost>
+        <Description>Ultimate Photon Torpedo weapon.</Description>
+        <Details>Last generation we managed to shrink the sub-space field generator, for the Mark III Photon Torpedo we've done the same for the warhead.</Details>
+        <Category>Missile</Category>
+        <Requires>Photon Torpedo II</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Anti-Matter Torp">
+        <DisplayName>Anti-Matter Torp</DisplayName>
+        <Cost>5000</Cost>
+        <Description>Powerful missile weapon technology.</Description>
+        <Details>Anti-matter torpedoes take advantage of a new type of warhead that mixes matter and anti-matter upon impact with an enemy ship, causing a great deal of damage.</Details>
+        <Category>Missile</Category>
+        <Requires>Photon Torpedo III</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Anti-Matter Torp II">
+        <DisplayName>Anti-Matter Torp II</DisplayName>
+        <Cost>5200</Cost>
+        <Description>Improved missile weapon.</Description>
+        <Details>The largest component of the anti-matter torpedo is the magnetic bottle system that keeps the system intact before reaching its target. By refining this, we've been able to decrease the total size of the weapon.</Details>
+        <Category>Missile</Category>
+        <Requires>Anti-Matter Torp</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Anti-Matter Torp III">
+        <DisplayName>Anti-Matter Torp III</DisplayName>
+        <Cost>5400</Cost>
+        <Description>Improved missile weapon.</Description>
+        <Details>Further refinements to the torpedo have allowed us to shrink the size of the anti-matter torpedo even more.</Details>
+        <Category>Missile</Category>
+        <Requires>Anti-Matter Torp II</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Quantum Torp">
+        <DisplayName>Quantum Torp</DisplayName>
+        <Cost>6000</Cost>
+        <Description>Lethal new missile weapon technology.</Description>
+        <Details>Quantum Torpedoes make use of sub-space itself for their damage. When a quantum torpedo nears its target, it creates a micro-ripple in subspace which has the effect of turning any matter in that ripple into energy - such as an enemy ship's hull.</Details>
+        <Category>Missile</Category>
+        <Requires>Anti-Matter Torp III</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Quantum Torp II">
+        <DisplayName>Quantum Torp II</DisplayName>
+        <Cost>6200</Cost>
+        <Description>Improved quantum-based missile weapon.</Description>
+        <Details>Thanks to a better understanding of quantum entanglement, we've managed to reduce the size of the Mark II Quantum Torpedo.</Details>
+        <Category>Missile</Category>
+        <Requires>Quantum Torp</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Quantum Torp III">
+        <DisplayName>Quantum Torp III</DisplayName>
+        <Cost>6800</Cost>
+        <Description>Ultimate quantum-based weapon technology.</Description>
+        <Details>"Margaritas all around!" - Last words of the quantum research team before their work blew up in their faces. Luckily for us, the data was stored in the mainframe, so we get to benefit from this ultimate Quantum Torpedo system.</Details>
+        <Category>Missile</Category>
+        <Requires>Quantum Torp II</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Positronic Torp">
+        <DisplayName>Positronic Torp</DisplayName>
+        <Cost>7000</Cost>
+        <Description>Powerful missile weapon technology.</Description>
+        <Details>Positronic torpedoes work on the same principle as Quantum torpedos except that they convert matter into energy in a larger area, making them particularly deadly.</Details>
+        <Category>Missile</Category>
+        <Requires>Quantum Torp III</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Positronic Torp II">
+        <DisplayName>Positronic Torp II</DisplayName>
+        <Cost>8000</Cost>
+        <Description>Improved positron-based missile technology.</Description>
+        <Details>Positrons are the anti-matter version of electrons. They are used in this case to help create a ripple in subspace which tends to create a chain reaction on matter in the positive universe. To make a long story short, they are a powerful missile weapon.</Details>
+        <Category>Missile</Category>
+        <Requires>Positronic Torp</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Weapons ID="Blackhole Eruptor">
+        <DisplayName>Black Hole Eruptor</DisplayName>
+        <Cost>9000</Cost>
+        <Description>Ultimate Missile weapon.</Description>
+        <Details>The Black Hole Eruptor is so powerful that it's hard to really classify it as a particular weapon type. What makes it technically a missile is that it has a guidance system and that its damage is not kinetic based (like a mass driver).
+
+      		The Blackhole Eruptor is a missile weapon in that when it reaches close proximity with its target, the weapon actually forms a temporary black hole near the enemy ship. It is frighteningly powerful as a weapon and must be used with extreme care.</Details>
+        <Category>Missile</Category>
+        <Requires>Positronic Torp II</Requires>
+        <Model>photons0</Model>
+        <AIValue>8</AIValue>
+    </Weapons>
+    <Propulsion ID="Impulse Drive Mark II">
+        <DisplayName>Impulse Drive Mark II</DisplayName>
+        <Cost>200</Cost>
+        <Description>Improved propulsion system.</Description>
+        <Details>How fast our starships travel is based on two factors. First, to what degree our propulsion technology can fold space. The second is how fast our ships can travel in normal space, particularly when moving through folded space. This advanced version of the Impulse Drive enables our ships to fold space slightly more, giving them a slightly greater overall speed.</Details>
+        <Requires>ImpulseDrive</Requires>
+        <Model>hyperspace0</Model>
+        <AIValue>12</AIValue>
+        <Category>Propulsion</Category>
+    </Propulsion>
+    <Propulsion ID="Impulse Drive Mark III">
+        <DisplayName>Impulse Drive Mark III</DisplayName>
+        <Cost>300</Cost>
+        <Description>Taking Impulse Drive technology to the limit. We can get more power with less size in our engines.</Description>
+        <Details>Impulse Drive is tapped out in terms of how fast it can go. We have, however, had great success decreasing the size necessary to generate an impulse field. New engines will be smaller than ever!</Details>
+        <Requires>Impulse Drive Mark II</Requires>
+        <Model>hyperspace0</Model>
+        <AIValue>12</AIValue>
+        <Category>Propulsion</Category>
+    </Propulsion>
+    <Propulsion ID="Warp Drive">
+        <DisplayName>Warp Drive</DisplayName>
+        <Cost>1000</Cost>
+        <Description>New type of propulsion provides +1 movement to all our units.</Description>
+        <Details>Vroooooooom! Warp drive is the latest in intergalactic travel. While previous types of propulsion did indeed "warp" space, warp drive does it at a whole new level.</Details>
+        <Requires>Impulse Drive Mark III</Requires>
+        <Model>warpdrive0</Model>
+        <SpeedAbility>10</SpeedAbility>
+        <AIValue>30</AIValue>
+        <Category>Propulsion</Category>
+    </Propulsion>
+    <Propulsion ID="Warp Drive II">
+        <DisplayName>Warp Drive II</DisplayName>
+        <Cost>800</Cost>
+        <Description>Improved warp drive propulsion system.</Description>
+        <Details>Our scientists continue to shrink the space needed to house the spacial warping equipment necessary to fold space for intergalactic travel. This new type of warp drive isn't faster, but it does use less space.</Details>
+        <Requires>Warp Drive</Requires>
+        <Model>warpdrive0</Model>
+        <AIValue>4</AIValue>
+        <Category>Propulsion</Category>
+    </Propulsion>
+    <Propulsion ID="Warp Drive III">
+        <DisplayName>Warp Drive III</DisplayName>
+        <Cost>900</Cost>
+        <Description>Enhanced warp-based propulsion technology.</Description>
+        <Details>Field coil refinements have allowed us to develop this Mark III Warp Drive system.</Details>
+        <Requires>Warp Drive II</Requires>
+        <Model>warpdrive0</Model>
+        <AIValue>3</AIValue>
+        <Category>Propulsion</Category>
+    </Propulsion>
+    <Propulsion ID="Warp Drive IV">
+        <DisplayName>Warp Drive IV</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Superior warp-based propulsion technology.</Description>
+        <Details>Working off a bet, our lead scientist went on a week long bender claiming he could improve the already fantastic Warp Drive. Who knew? He did it!</Details>
+        <Requires>Warp Drive III</Requires>
+        <Model>warpdrive0</Model>
+        <AIValue>3</AIValue>
+        <Category>Propulsion</Category>
+    </Propulsion>
+    <Propulsion ID="Warp Drive V">
+        <DisplayName>Warp Drive V</DisplayName>
+        <Cost>1200</Cost>
+        <Description>Ultimate warp-based propulsion system.</Description>
+        <Details>Ah, the Warp Drive. Perhaps our greatest invention, allowing us to traverse the galaxy at unheard of speed. At least until something better comes along...</Details>
+        <Requires>Warp Drive IV</Requires>
+        <Model>warpdrive0</Model>
+        <AIValue>3</AIValue>
+        <Category>Propulsion</Category>
+    </Propulsion>
+    <Propulsion ID="HyperWarp">
+        <DisplayName>HyperWarp</DisplayName>
+        <Cost>4000</Cost>
+        <Description>A new form of propulsion that adds an additional +1 to all unit movement.</Description>
+        <Details>HyperWarp uses energy levels that are simply frightening to comprehend. It is a much more efficient method to warp space so that even if the energy levels are the same as previous drive technologies, space is warped by a far greater extent. Space is warped by default by a magnitude that triples the original Hyperdrive ratio.
+
+      		If we actually take advantage of the new HyperWarp system's capabilities for making use of greater amounts of energy, we could see ships that can move a dozen parsecs in a single week.</Details>
+        <Requires>Warp Drive V</Requires>
+        <Model>hyper320</Model>
+        <AIValue>20</AIValue>
+        <Category>Propulsion</Category>
+        <SpeedAbility>10</SpeedAbility>
+    </Propulsion>
+    <Propulsion ID="HyperWarp II">
+        <DisplayName>HyperWarp II</DisplayName>
+        <Cost>3000</Cost>
+        <Description>Improved HyperWarp propulsion.</Description>
+        <Details>We continue to improve on HyperWarp propulsion. It takes increasingly less energy to fold space just as much as previous generations.</Details>
+        <Requires>HyperWarp</Requires>
+        <Model>hyper320</Model>
+        <AIValue>3</AIValue>
+        <Category>Propulsion</Category>
+    </Propulsion>
+    <Propulsion ID="HyperWarp III">
+        <DisplayName>HyperWarp III</DisplayName>
+        <Cost>3200</Cost>
+        <Description>Superior form of HyperWarp propulsion system.</Description>
+        <Details>Who would have thought that HyperWarp could get even better? We sure didn't, but here it is!</Details>
+        <Requires>HyperWarp II</Requires>
+        <Model>hyper320</Model>
+        <AIValue>3</AIValue>
+        <Category>Propulsion</Category>
+    </Propulsion>
+    <Computing ID="Research Center">
+        <DisplayName>Research Centers</DisplayName>
+        <Cost>600</Cost>
+        <Description>Allows us to build research centers on our planets.</Description>
+        <Details>To research new technologies our scientists must have places to work. We have discovered a new type of research and engineering facility that should allow for much more efficient technology research. We should look to build these on our planets at once.</Details>
+        <Category>Pure Research</Category>
+        <Requires>XenoResearch</Requires>
+        <Model>hypercom0</Model>
+        <AIValue>5</AIValue>
+    </Computing>
+    <Computing ID="Research Academy">
+        <DisplayName>Research Academies</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Allows us to build research academies on our planets.</Description>
+        <Details>The Research Academy is a marvel unto itself. Most people don't realize just how large in terms of square miles these kinds of buildings are. They're not simply a building, they are cities unto themselves dedicated to research. Constructing these where possible will increase how fast we can obtain new technologies.</Details>
+        <Category>Pure Research</Category>
+        <Requires>Research Center</Requires>
+        <Model>hypercom0</Model>
+        <AIValue>4</AIValue>
+    </Computing>
+    <Computing ID="Neutrality Learning Center">
+        <DisplayName>Neutrality Learning Centers</DisplayName>
+        <Cost>2000</Cost>
+        <Description>An incredible research facility for civilizations who have embraced a balanced philosophy.</Description>
+        <Details>Those who focus too much on the light or darkness miss out on a great many things. The Neutrality Learning Center can be constructed on our worlds and are immensely powerful research facilities.</Details>
+        <Category>Pure Research</Category>
+        <Requires>Research Academy</Requires>
+        <Model>hypercom0</Model>
+        <AIValue>5</AIValue>
+        <Alignment>Neutral</Alignment>
+    </Computing>
+    <Computing ID="Invention Matrix">
+        <DisplayName>Invention Matrix</DisplayName>
+        <Cost>3000</Cost>
+        <Description>Allows us to build an Invention Matrix on our planets.</Description>
+        <Details>The Invention Matrix is a city-sized research facility dedicated to unlocking the secrets of the universe.</Details>
+        <Category>Pure Research</Category>
+        <Requires>Research Academy</Requires>
+        <Model>hypercom0</Model>
+        <AIValue>4</AIValue>
+    </Computing>
+    <Computing ID="Discovery Sphere">
+        <DisplayName>Discovery Sphere</DisplayName>
+        <Cost>6000</Cost>
+        <Description>Enables the construction of Discovery Spheres on our worlds, along with the a new Omega-level super project.</Description>
+        <Details>Oh yeah. We've got Discovery Spheres. When a researcher steps inside one of these things, it's as if the universe and all its wonder is instantly available to that researcher. The knowledge of the universe becomes an extension of the intellect of the researcher in that field.</Details>
+        <Category>Medical</Category>
+        <Requires>Invention Matrix</Requires>
+        <Model>hypercom0</Model>
+        <AIValue>4</AIValue>
+    </Computing>
+    <Computing ID="Deeper Knowledge">
+        <DisplayName>Deeper Knowledge</DisplayName>
+        <Cost>3000</Cost>
+        <Description>Takes us down the path to a technology victory.</Description>
+        <Details>Because knowledge is power!</Details>
+        <Category>Research</Category>
+        <Requires>Discovery Sphere</Requires>
+        <Model>hypercom0</Model>
+        <AIValue>1</AIValue>
+    </Computing>
+    <Computing ID="Galactic Understanding">
+        <DisplayName>Galactic Understanding</DisplayName>
+        <Cost>6000</Cost>
+        <Description>Takes us along the path to a technology victory.</Description>
+        <Details>We have taken the next step towards a greater understanding of the galaxy. If we continue on this path, we may unlock the very secrets of the universe itself and dominate all of creation.</Details>
+        <Category>Research</Category>
+        <Requires>Deeper Knowledge</Requires>
+        <Model>hypercom0</Model>
+        <AIValue>1</AIValue>
+    </Computing>
+    <Computing ID="Near Omniscience">
+        <DisplayName>Near Omniscience</DisplayName>
+        <Cost>12000</Cost>
+        <Description>Takes us further along the path to a technology victory.</Description>
+        <Details>From our greater understanding of the universe, we have become nearly prescient. Continuing along this path of research shall surely lead to even greater abilities.</Details>
+        <Category>Research</Category>
+        <Requires>Galactic Understanding</Requires>
+        <Model>hypercom0</Model>
+        <AIValue>1</AIValue>
+    </Computing>
+    <Computing ID="Beyond Mortality">
+        <DisplayName>Beyond Mortality</DisplayName>
+        <Cost>20000</Cost>
+        <Description>Takes us down the path to technology victory.</Description>
+        <Details>After thousands of years of wondering, we have finally learned that death truly isn't the end of all things. This nearly divine understanding frees us to make the next and greatest discovery...</Details>
+        <Category>Research</Category>
+        <Requires>Near Omniscience</Requires>
+        <Model>hypercom0</Model>
+        <AIValue>1</AIValue>
+    </Computing>
+    <Computing ID="Technology Victory">
+        <DisplayName>Technology Victory</DisplayName>
+        <Cost>40000</Cost>
+        <Description>If we successfully research this, we will know the very secrets of life and the universe itself.</Description>
+        <Details>For reasons we don't understand, our clocks have started blinking 42! Upon completing this technology we will have built a device that will turn mankind into a new form of being - a being of pure energy. Hold on tight...here...it...comes!</Details>
+        <Category>Research</Category>
+        <Requires>Beyond Mortality</Requires>
+        <Model>hypercom0</Model>
+        <AIValue>1</AIValue>
+    </Computing>
+    <Computing ID="Advanced Computing">
+        <DisplayName>Advanced Computing</DisplayName>
+        <Cost>100</Cost>
+        <Description>Leads to technologies that require intensive computing power.</Description>
+        <Details>We're a long way away from personal computers now. Well, no, not really. But the important thing is that we have set up a series of labs across our civilization dedicated to researching advanced computing technologies which can lead to all kinds of useful things.</Details>
+        <Requires>XenoResearch</Requires>
+        <Category>Miniaturization</Category>
+        <Model>instantcom0</Model>
+        <AIValue>10</AIValue>
+    </Computing>
+    <Culture ID="StarRep">
+        <DisplayName>Interstellar Republic</DisplayName>
+        <Cost>800</Cost>
+        <Description>Allows us to transform to an interstellar republic.</Description>
+        <Details>With research completed on the interstellar republic, our government can now start to involve its citizens in the decision making process. By choosing to change to a republic, citizens in our empire will, for the first time, get to vote on their ruling party, whether or not to go to war, and what form of government they wish to belong to. So keep your people happy and they will vote in your favor.</Details>
+        <Requires>Alliances</Requires>
+        <Category>Government</Category>
+        <DiplomacyAbility>10</DiplomacyAbility>
+        <Model>stardemoc0</Model>
+        <CultureAbility>5</CultureAbility>
+        <AIValue>15</AIValue>
+    </Culture>
+    <Culture ID="StarDem">
+        <DisplayName>Star Democracy</DisplayName>
+        <Cost>1500</Cost>
+        <Description>Allows us to transform to a star democracy.</Description>
+        <Details>Star Democracy ups the ante on the importance of keeping our people happy. On the other hand, it also vastly increases our economic and industrial capacity as well.</Details>
+        <Requires>StarRep</Requires>
+        <Category>Government</Category>
+        <DiplomacyAbility>10</DiplomacyAbility>
+        <Model>stardemoc0</Model>
+        <CultureAbility>5</CultureAbility>
+        <AIValue>15</AIValue>
+    </Culture>
+    <Culture ID="StarFed">
+        <DisplayName>Star Federation</DisplayName>
+        <Cost>5000</Cost>
+        <Description>Allows us to transform to a star federation.</Description>
+        <Details>The ultimate form of interstellar government also requires a great deal of effort to maintain. People have very high expectations of a central government when each planet has so much independence. However, it also allows for far greater economic and industrial capacity.</Details>
+        <Requires>StarDem</Requires>
+        <Category>Government</Category>
+        <DiplomacyAbility>10</DiplomacyAbility>
+        <Model>stardemoc0</Model>
+        <CultureAbility>5</CultureAbility>
+        <AIValue>10</AIValue>
+    </Culture>
+    <Industry ID="Xeno Trade Centers">
+        <DisplayName>Xeno Trade Centers</DisplayName>
+        <Cost>800</Cost>
+        <Description>Allows us to construct Trade Centers on our colonies.</Description>
+        <Details>Trade Centers increase the economic activity on our planets. In turn, our taxes from this economic activity will help provide us with the capital necessary to build a better society...or at least better defend it.</Details>
+        <Requires>XenoEconomics</Requires>
+        <Category>Economics</Category>
+        <Model>stardemoc0</Model>
+        <AIValue>3</AIValue>
+    </Industry>
+    <Culture ID="Trade">
+        <DisplayName>Trade</DisplayName>
+        <Cost>200</Cost>
+        <Description>Enables us to create trade routes with other civilizations.</Description>
+        <Details>Where would the galaxy be if we were unable to push our wares onto other species? We've pretty much maxed out the tolerance our own population has for our products and services. Thankfully, there's a whole universe of unsuspecting...customers just waiting to buy our stuff.
+
+		Now, we must build freighters and send them to other planets. Once our freighter has done that, a trade route is created. The number of trade routes we can manage depends on our trade ability. Other technologies enable us to have more trade routes.
+		</Details>
+        <Requires>Diplomatic Relations</Requires>
+        <Category>Trade</Category>
+        <DiplomacyAbility>10</DiplomacyAbility>
+        <TradeRoutesAbility>3</TradeRoutesAbility>
+        <TradeAbility>10</TradeAbility>
+        <Model>hypercom0</Model>
+        <AIValue>25</AIValue>
+    </Culture>
+    <Culture ID="Advanced Trade">
+        <DisplayName>Advanced Trade</DisplayName>
+        <Cost>400</Cost>
+        <Description>Enables us to support two more trade routes.</Description>
+        <Details>What can we say? The citizens of the galaxy yearn, nay, absolutely demand more of our stuff. And thankfully, we are ready to serve their every need. We can now create another couple trade routes in which we can send our products to distant worlds in exchange for hard currency that may later be used to exterminate them. It's a circle of life kind of thing.</Details>
+        <Requires>Trade</Requires>
+        <Category>Trade</Category>
+        <TradeRoutesAbility>3</TradeRoutesAbility>
+        <TradeAbility>10</TradeAbility>
+        <AIValue>10</AIValue>
+        <Model>hypercom0</Model>
+    </Culture>
+    <Culture ID="Neutral Shipping">
+        <DisplayName>Neutral Shipping</DisplayName>
+        <Cost>400</Cost>
+        <Description>Adds an additional 3 trade routes to our civilization.</Description>
+        <Details>Those who have embraced the so-called "path of light" aren't well trusted in terms of intergalactic trade. Too preachy. And those who embrace the dark are generally not liked enough to get too easy a foothold in the intergalactic bazaars.
+
+      		However, those who walk the balanced path tend to be trusted by all. As a result, we are able to add three more trade routes.</Details>
+        <Requires>Trade</Requires>
+        <Category>Trade</Category>
+        <TradeRoutesAbility>3</TradeRoutesAbility>
+        <TradeAbility>10</TradeAbility>
+        <AIValue>5</AIValue>
+        <Model>hypercom0</Model>
+        <Alignment>Neutral</Alignment>
+    </Culture>
+    <Culture ID="Master Trade">
+        <DisplayName>Master Trade</DisplayName>
+        <Cost>1200</Cost>
+        <Description>Enables us to add more trade routes.</Description>
+        <Details>Remember that old Human joke about having a bridge to sell? Well with Master Trade, we really can. The entire universe is ours to market to.</Details>
+        <Requires>Advanced Trade</Requires>
+        <Category>Trade</Category>
+        <TradeRoutesAbility>3</TradeRoutesAbility>
+        <TradeAbility>10</TradeAbility>
+        <AIValue>5</AIValue>
+        <Model>hypercom0</Model>
+    </Culture>
+    <Computing ID="StellarCartography">
+        <DisplayName>Stellar Cartography</DisplayName>
+        <Cost>25</Cost>
+        <Description>Enables us to see planets on the mini-map.</Description>
+        <Details>Our sensors allow us to see stars throughout the galaxy, but not necessarily planets. Those planets that we think are high quality may show up slightly different on our mini-map scanner now.</Details>
+        <Category>Sensor</Category>
+        <Requires>XenoResearch</Requires>
+        <AIValue>1</AIValue>
+        <Model>artificial planet0</Model>
+    </Computing>
+    <Computing ID="StarScanner">
+        <DisplayName>Sensors</DisplayName>
+        <Cost>100</Cost>
+        <Description>Provides a superior level of sensors for our ships.</Description>
+        <Details>How far our ships can see into the interstellar night is always of significant concern. We want to have good sensor range but we don't want to use too much space for it.</Details>
+        <Category>Sensor</Category>
+        <Requires>StellarCartography</Requires>
+        <Model>sensors0</Model>
+        <SensorsAbility>1</SensorsAbility>
+        <AIValue>1</AIValue>
+    </Computing>
+    <Computing ID="StarScanner2">
+        <DisplayName>Sensors Mark II</DisplayName>
+        <Cost>200</Cost>
+        <Description>Provides a superior level of sensors for our ships.</Description>
+        <Details>With these enhanced sensors, we can now see further into the galaxy than ever before.</Details>
+        <Category>Sensor</Category>
+        <Requires>StarScanner</Requires>
+        <Model>sensors0</Model>
+        <AIValue>1</AIValue>
+    </Computing>
+    <Computing ID="Sensor2">
+        <DisplayName>Sensors Mark III</DisplayName>
+        <Cost>300</Cost>
+        <Category>Sensor</Category>
+        <Description>Provides a superior level of sensors for our ships.</Description>
+        <Details>Technology is a good thing. It's allowed us to further refine our sensor technology to the point where we can almost see what's happening in that person's house on the other side of the galaxy...</Details>
+        <Requires>StarScanner2</Requires>
+        <Model>sensors0</Model>
+        <AIValue>1</AIValue>
+    </Computing>
+    <Computing ID="Sensor3">
+        <DisplayName>Sensors Mark IV</DisplayName>
+        <Cost>500</Cost>
+        <Category>Sensor</Category>
+        <Description>The ultimate in sensor technology for our ships.</Description>
+        <Details>Our enemies won't be able to sneak up on us any longer now that we can equip our ships with Mark IV sensors.</Details>
+        <Requires>Sensor2</Requires>
+        <Model>sensors0</Model>
+        <AIValue>1</AIValue>
+    </Computing>
+    <Weapons ID="Planetary Invasion">
+        <DisplayName>Planetary Invasion</DisplayName>
+        <Cost>900</Cost>
+        <Category>Invasion</Category>
+        <Requires>Space Militarization</Requires>
+        <Description>Allows us to build troop transport modules on our ships for invasions.</Description>
+        <Details>Honor, courage, bravery, integrity. None of these things matter if you cannot get to the battle. Now we can build transport modules onto our ships!</Details>
+        <AIValue>18</AIValue>
+        <Model>turbophaser0</Model>
+    </Weapons>
+    <Weapons ID="Planetary Bombardment">
+        <DisplayName>Planetary Bombardment</DisplayName>
+        <Cost>600</Cost>
+        <Category>Invasion</Category>
+        <Requires>Planetary Invasion</Requires>
+        <Description>Allows our invasion transports to bombard planets from space - softening them up for our troops.</Description>
+        <Details>Sometimes you have to destroy the planet to save it. At least, that's the current thinking with this line of research. Here's the idea: We gain orbital control of the planet and then simply drop small asteroids onto it. The asteroids will destroy much of the planet's surface but it will make it easier to...well...conquer.</Details>
+        <SoldieringAbility>5</SoldieringAbility>
+        <AIValue>12</AIValue>
+        <Model>turbophaser0</Model>
+    </Weapons>
+    <Weapons ID="Space Marines">
+        <DisplayName>Stellar Marines</DisplayName>
+        <Cost>400</Cost>
+        <Category>Invasion</Category>
+        <Requires>Planetary Bombardment</Requires>
+        <Description>Improves our soldiers on planets.</Description>
+        <Details>Send in the marines!</Details>
+        <SoldieringAbility>15</SoldieringAbility>
+        <AIValue>12</AIValue>
+        <Model>turbophaser0</Model>
+    </Weapons>
+    <Weapons ID="Planetary Defense">
+        <DisplayName>Planetary Defense</DisplayName>
+        <Cost>300</Cost>
+        <Category>Invasion</Category>
+        <Requires>Planetary Invasion</Requires>
+        <Description>Provides backup support for defending starships.</Description>
+        <Details>Now that we know how to invade other worlds, we have come up with some ideas to help keep our own worlds from being conquered. For one thing, we can project a slight sub-space field about our ships that will increase their effective hit points by a small amount.
+
+		But the biggest thing we can do is build an orbital fleet manager. The orbital fleet manager will allow us to coordinate ships in orbit on the fly to meet attackers. To the lay person, organizing a fleet on the spot probably seems easy, but here's the thing - space is big. We discussed this previously. It's very big. Even our tiny planets are very big compared to our ships. When a fleet of enemy ships comes out of hyperspace in orbit of our planets, it's very difficult to suddenly coordinate a bunch of ships in orbit. The orbital fleet manager will allow us to do this.</Details>
+        <SoldieringAbility>10</SoldieringAbility>
+        <AIValue>38</AIValue>
+        <Model>turbophaser0</Model>
+    </Weapons>
+    <Weapons ID="Adv. Planetary Defense">
+        <DisplayName>Adv. Planetary Defense</DisplayName>
+        <Cost>2000</Cost>
+        <Category>Invasion</Category>
+        <Requires>Planetary Defense</Requires>
+        <Description>Provides additional backup support for defending starships.</Description>
+        <Details>Now that we know how to invade other worlds, we have come up with some ideas to help keep our own worlds from being conquered. For one thing, we can project a slight sub-space field about our ships that will increase their effective hit points by a small amount.</Details>
+        <SoldieringAbility>10</SoldieringAbility>
+        <AIValue>4</AIValue>
+        <Model>turbophaser0</Model>
+    </Weapons>
+    <Weapons ID="Supreme Planetary Defense">
+        <DisplayName>Supreme Planetary Defense</DisplayName>
+        <Cost>6000</Cost>
+        <Category>Invasion</Category>
+        <Requires>Adv. Planetary Defense</Requires>
+        <Description>Provides additional backup support for defending starships.</Description>
+        <Details>Thanks to some trial runs, we've now perfected the sub-space field around our ships, allowing them to last even longer when trouble comes knocking.</Details>
+        <SoldieringAbility>10</SoldieringAbility>
+        <AIValue>4</AIValue>
+        <Model>turbophaser0</Model>
+    </Weapons>
+    <Weapons ID="Shock Troops">
+        <DisplayName>Shock Troops</DisplayName>
+        <Cost>500</Cost>
+        <Category>Invasion</Category>
+        <Requires>Advanced Troop Mods</Requires>
+        <Description>Improves our soldiers on planets.</Description>
+        <Details>Our shock troops will provide the ultimate shock and awe in our enemies.</Details>
+        <SoldieringAbility>15</SoldieringAbility>
+        <AIValue>8</AIValue>
+        <Model>turbophaser0</Model>
+    </Weapons>
+    <Weapons ID="Advanced Troop Mods">
+        <DisplayName>Advanced Troop Mod</DisplayName>
+        <Cost>500</Cost>
+        <Category>Invasion</Category>
+        <Requires>Space Marines</Requires>
+        <Description>Allows for advanced troop modules to be used on transport ships.</Description>
+        <Details>Advanced troop modules hold twice as many troops in half the size. Not exactly comfortable but it'll make the eventual pillaging and conquest more expedient.</Details>
+        <AIValue>25</AIValue>
+        <Model>turbophaser0</Model>
+    </Weapons>
+    <Weapons ID="Tidal Disruption">
+        <DisplayName>Tidal Disruption</DisplayName>
+        <Cost>600</Cost>
+        <Category>Invasion</Category>
+        <Requires>Planetary Bombardment</Requires>
+        <Description>Rather than blowing everything up, we drown them.</Description>
+        <SoldieringAbility>15</SoldieringAbility>
+        <Details>This option doesn't always work that well, as not all planets have a lot of water on them. But we can drown out much of the resistance by altering the tidal cycle of the planet from space.</Details>
+        <AIValue>4</AIValue>
+        <Model>nanometal0</Model>
+    </Weapons>
+    <Computing ID="XenoResearch">
+        <DisplayName>Xeno Research</DisplayName>
+        <Cost>20</Cost>
+        <Category>Pure Research</Category>
+        <Description>Takes us down the path of learning new technologies that can be applied for basic theoretical research.</Description>
+        <Details>Nobody likes these terms "xeno research," but it was the only term that everyone could agree on. We have put ourselves on a track in which we're no longer merely researching things for our home world but for an entire galactic civilization. These technologies are set apart in that they can be applied to many different worlds, environments, and even different species of sentient creature.</Details>
+        <Requires>Xeno Engineering</Requires>
+        <AIValue>25</AIValue>
+        <Model>nanometal0</Model>
+    </Computing>
+    <Weapons ID="StarbaseMilitarization">
+        <DisplayName>Starbase Defenses</DisplayName>
+        <Cost>500</Cost>
+        <Description>Equip starbases with modules to help your ships.</Description>
+        <Details>Starbases can be bastions of interstellar superiority if equipped to support your ships.</Details>
+        <Category>Starbase</Category>
+        <Requires>Space Weapons</Requires>
+        <AIValue>18</AIValue>
+        <Model>artifsatellite0</Model>
+    </Weapons>
+    <Weapons ID="StarbaseMobilization">
+        <DisplayName>Starbase Mobilization</DisplayName>
+        <Cost>1500</Cost>
+        <Description>Equip starbases with more advanced ship support systems.</Description>
+        <Details>Supporting ships in the area of a starbase can help lead our forces to victory.</Details>
+        <Category>Starbase</Category>
+        <Requires>StarbaseMilitarization</Requires>
+        <AIValue>10</AIValue>
+        <Model>artifsatellite0</Model>
+    </Weapons>
+    <Weapons ID="StarbaseProjection">
+        <DisplayName>Starbase Projection</DisplayName>
+        <Cost>2500</Cost>
+        <Description>Equip starbases with very powerful, lethal systems to support our ships.</Description>
+        <Details>In many cases, we can actually make our ships more powerful than they could possibly be on their own by enhancing our starbases with immense equipment to amplify the weapons and defenses of nearby ships.</Details>
+        <Category>Starbase</Category>
+        <Requires>StarbaseMobilization</Requires>
+        <AIValue>3</AIValue>
+        <Model>artifsatellite0</Model>
+    </Weapons>
+    <Weapons ID="StarbaseDomination">
+        <DisplayName>Superior Starbase Defense Systems</DisplayName>
+        <Cost>3500</Cost>
+        <Description>Equip starbases with modules that can make even weak ships be galactic conquerors.</Description>
+        <Details>The starbase can be a bastion of power. But Starbase domination takes that to a whole new level as even relatively weak ships can be made immensely powerful.</Details>
+        <Category>Starbase</Category>
+        <Requires>StarbaseProjection</Requires>
+        <Model>phaser0</Model>
+        <AIValue>5</AIValue>
+    </Weapons>
+    <Weapons ID="StarbaseConquestStrategy">
+        <DisplayName>Starbase Conquest Strategy</DisplayName>
+        <Cost>4500</Cost>
+        <Description>Enables starbases to be the flagship of your fleets.</Description>
+        <Details>Starbases can't move, but they have a large area of effect. The new miltary support modules that we've invented will allow our ships to operate with immense power in those areas.</Details>
+        <Category>Starbase</Category>
+        <Requires>StarbaseDomination</Requires>
+        <Model>phaser0</Model>
+        <AIValue>3</AIValue>
+    </Weapons>
+    <Defenses ID="Starbase Fortification">
+        <DisplayName>Starbase Fortification</DisplayName>
+        <Cost>400</Cost>
+        <Description>Weapons are useful for taking out enemies. But we still need to fortify our armor, shield, and point defenses in order to preserve the strength of our starbases as measured in "hit points."</Description>
+        <Details>When a starship attacks one of our starbases, the weapons of our starbase inflict damage on our enemies. Our defensive fortifications are necessary to decrease the damage those same enemies can do to our starbases.</Details>
+        <Category>Starbase</Category>
+        <Requires>StarshipDefenses</Requires>
+        <Model>bistront0</Model>
+        <AIValue>10</AIValue>
+    </Defenses>
+    <Defenses ID="Starbase Fortification Mark II">
+        <DisplayName>Starbase Fortification Mark II</DisplayName>
+        <Cost>1000</Cost>
+        <Description>Improved defensive systems to help protect our starbases.</Description>
+        <Details>When the going gets tough, it's time to make the starbase tougher. This next generation of fortification technology lets us do just that.</Details>
+        <Category>Starbase</Category>
+        <Requires>Starbase Fortification</Requires>
+        <Model>bistront0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+    <Defenses ID="Starbase Fortification Mark III">
+        <DisplayName>Starbase Fortification Mark III</DisplayName>
+        <Cost>4000</Cost>
+        <Description>The ultimate in starbase fortification.</Description>
+        <Details>Only concerted and prolonged attacks by our enemies will be able to destroy our starbases which make use of this technology.</Details>
+        <Category>Starbase</Category>
+        <Requires>Starbase Fortification Mark II</Requires>
+        <Model>bistront0</Model>
+        <AIValue>3</AIValue>
+    </Defenses>
+</Technologies>
