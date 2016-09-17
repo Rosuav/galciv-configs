@@ -66,8 +66,66 @@
         <Requires>Xeno Communications</Requires>
         <Category>Diplomacy</Category>
         <DiplomacyAbility>5</DiplomacyAbility>
+        <SpeedAbility>100</SpeedAbility>
+        <SensorsAbility>30</SensorsAbility>
+        <CultureAbility>250</CultureAbility>
         <Model>translator0</Model>
         <AIValue>10</AIValue>
+    </Culture>
+    <Culture ID="SuperInfluence1">
+        <DisplayName>Enhanced Influence</DisplayName>
+        <Cost>25</Cost>
+        <Description>Improves our influence</Description>
+        <Details>Comprehension of the basics of business allows us to expand our commercial influence dramatically.</Details>
+        <Requires>UniversalTranslator</Requires>
+        <Category>Diplomacy</Category>
+        <SpeedAbility>20</SpeedAbility>
+        <CultureAbility>250</CultureAbility>
+        <Model>translator0</Model>
+    </Culture>
+    <Culture ID="SuperInfluence2">
+        <DisplayName>Improved Influence</DisplayName>
+        <Cost>25</Cost>
+        <Description>Improves our influence more</Description>
+        <Details>Comprehension of business allows us to expand our commercial influence even further.</Details>
+        <Requires>SuperInfluence1</Requires>
+        <Category>Diplomacy</Category>
+        <SpeedAbility>20</SpeedAbility>
+        <CultureAbility>250</CultureAbility>
+        <Model>translator0</Model>
+    </Culture>
+    <Culture ID="SuperInfluence3">
+        <DisplayName>Augmented Influence</DisplayName>
+        <Cost>25</Cost>
+        <Description>Improves our influence even more</Description>
+        <Details>Comprehension of business allows us to expand our commercial influence still further.</Details>
+        <Requires>SuperInfluence2</Requires>
+        <Category>Diplomacy</Category>
+        <SpeedAbility>20</SpeedAbility>
+        <CultureAbility>250</CultureAbility>
+        <Model>translator0</Model>
+    </Culture>
+    <Culture ID="SuperInfluence4">
+        <DisplayName>Epic Influence</DisplayName>
+        <Cost>25</Cost>
+        <Description>Improves our influence astonishingly</Description>
+        <Details>Comprehension of business allows us to expand our commercial influence to ridiculous levels.</Details>
+        <Requires>SuperInfluence3</Requires>
+        <Category>Diplomacy</Category>
+        <SpeedAbility>20</SpeedAbility>
+        <CultureAbility>250</CultureAbility>
+        <Model>translator0</Model>
+    </Culture>
+    <Culture ID="SuperInfluence5">
+        <DisplayName>Supreme Influence</DisplayName>
+        <Cost>25</Cost>
+        <Description>Improves our influence ultimately</Description>
+        <Details>Comprehension of business allows us to expand our commercial influence beyond normality.</Details>
+        <Requires>SuperInfluence4</Requires>
+        <Category>Diplomacy</Category>
+        <SpeedAbility>20</SpeedAbility>
+        <CultureAbility>250</CultureAbility>
+        <Model>translator0</Model>
     </Culture>
     <Culture ID="Xeno Communications">
         <DisplayName>Xeno Communications</DisplayName>
@@ -162,7 +220,7 @@
         <Cost>400</Cost>
         <Description>Enables the construction of starbase modules and planetary improvements that enhance our culture.</Description>
         <Details>The best way to make other cultures bend themselves to your whims is to sell stuff to them. Once they're addicted to our clothes, our food, our entertainment and more, we've got them. Plus we get to make a tidy profit too.</Details>
-        <Requires>Xeno Entertainment</Requires>
+        <Requires>UniversalTranslator</Requires>
         <Category>Culture</Category>
         <CultureAbility>5</CultureAbility>
         <Model>instantcom0</Model>
@@ -1890,7 +1948,7 @@
 
       		Once harmonic equality has been reached, the main Doom Ray itself is fired which has the effect of converting significant portions of the enemy ship into energy which creates a chain reaction across the ship. It is, literally, the ultimate beam weapon technology.</Details>
         <Category>Beam</Category>
-        <Requires>Subspace Annihilator</Requires>
+        <Requires>SuperInfluence5</Requires>
         <Model>phaser0</Model>
         <AIValue>8</AIValue>
     </Weapons>
@@ -1903,7 +1961,7 @@
       		The black hole gun then rips apart enemy ships once it comes into contact with the enemy ship.
       </Details>
         <Category>MD</Category>
-        <Requires>Neutrino Bullets</Requires>
+        <Requires>SuperInfluence5</Requires>
         <Model>antimatdrive0</Model>
         <AIValue>8</AIValue>
     </Weapons>
