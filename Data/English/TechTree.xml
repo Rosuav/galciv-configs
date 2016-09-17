@@ -209,7 +209,7 @@
         <Cost>500</Cost>
         <Description>Enables us to better understand other civilizations and incorporate the best of their culture into ours.</Description>
         <Details>By studying other civilizations we can better understand why we are better than them in every way and feel good in our superiority.</Details>
-        <Requires>UniversalTranslator</Requires>
+        <Requires>PlanetaryImprovements</Requires>
         <Category>Culture</Category>
         <Model>instantcom0</Model>
         <MoraleAbility>10</MoraleAbility>
