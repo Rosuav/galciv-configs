@@ -79,8 +79,9 @@
         <Details>Comprehension of the basics of business allows us to expand our commercial influence dramatically.</Details>
         <Requires>UniversalTranslator</Requires>
         <Category>Diplomacy</Category>
-        <SpeedAbility>20</SpeedAbility>
-        <CultureAbility>250</CultureAbility>
+        <SpeedAbility>40</SpeedAbility>
+        <CultureAbility>100</CultureAbility>
+        <HitpointsAbility>50</HitpointsAbility>
         <Model>translator0</Model>
     </Culture>
     <Culture ID="SuperInfluence2">
@@ -90,8 +91,9 @@
         <Details>Comprehension of business allows us to expand our commercial influence even further.</Details>
         <Requires>SuperInfluence1</Requires>
         <Category>Diplomacy</Category>
-        <SpeedAbility>20</SpeedAbility>
-        <CultureAbility>250</CultureAbility>
+        <SpeedAbility>40</SpeedAbility>
+        <CultureAbility>100</CultureAbility>
+        <HitpointsAbility>50</HitpointsAbility>
         <Model>translator0</Model>
     </Culture>
     <Culture ID="SuperInfluence3">
@@ -101,8 +103,9 @@
         <Details>Comprehension of business allows us to expand our commercial influence still further.</Details>
         <Requires>SuperInfluence2</Requires>
         <Category>Diplomacy</Category>
-        <SpeedAbility>20</SpeedAbility>
-        <CultureAbility>250</CultureAbility>
+        <SpeedAbility>40</SpeedAbility>
+        <CultureAbility>100</CultureAbility>
+        <HitpointsAbility>50</HitpointsAbility>
         <Model>translator0</Model>
     </Culture>
     <Culture ID="SuperInfluence4">
@@ -112,8 +115,9 @@
         <Details>Comprehension of business allows us to expand our commercial influence to ridiculous levels.</Details>
         <Requires>SuperInfluence3</Requires>
         <Category>Diplomacy</Category>
-        <SpeedAbility>20</SpeedAbility>
-        <CultureAbility>250</CultureAbility>
+        <SpeedAbility>40</SpeedAbility>
+        <CultureAbility>100</CultureAbility>
+        <HitpointsAbility>50</HitpointsAbility>
         <Model>translator0</Model>
     </Culture>
     <Culture ID="SuperInfluence5">
@@ -123,8 +127,9 @@
         <Details>Comprehension of business allows us to expand our commercial influence beyond normality.</Details>
         <Requires>SuperInfluence4</Requires>
         <Category>Diplomacy</Category>
-        <SpeedAbility>20</SpeedAbility>
+        <SpeedAbility>40</SpeedAbility>
         <CultureAbility>250</CultureAbility>
+        <HitpointsAbility>50</HitpointsAbility>
         <Model>translator0</Model>
     </Culture>
     <Culture ID="Xeno Communications">
@@ -223,6 +228,7 @@
         <Requires>UniversalTranslator</Requires>
         <Category>Culture</Category>
         <CultureAbility>5</CultureAbility>
+        <LogisticsAbility>3</LogisticsAbility>
         <Model>instantcom0</Model>
         <AIValue>3</AIValue>
     </Culture>
@@ -234,6 +240,7 @@
         <Requires>Xeno Business</Requires>
         <Category>Culture</Category>
         <CultureAbility>5</CultureAbility>
+        <LogisticsAbility>3</LogisticsAbility>
         <Model>instantcom0</Model>
         <AIValue>3</AIValue>
     </Culture>
@@ -309,6 +316,7 @@
         <Requires>Cultural Domination</Requires>
         <Category>Culture</Category>
         <CultureAbility>5</CultureAbility>
+        <LogisticsAbility>3</LogisticsAbility>
         <Model>instantcom0</Model>
         <AIValue>3</AIValue>
     </Culture>
@@ -320,6 +328,7 @@
         <Requires>Historical Assimilation</Requires>
         <Category>Culture</Category>
         <CultureAbility>5</CultureAbility>
+        <LogisticsAbility>3</LogisticsAbility>
         <Model>instantcom0</Model>
         <AIValue>3</AIValue>
     </Culture>
@@ -331,6 +340,7 @@
         <Requires>Xeno Cultural Trends</Requires>
         <Category>Culture</Category>
         <CultureAbility>5</CultureAbility>
+        <LogisticsAbility>3</LogisticsAbility>
         <Model>instantcom0</Model>
         <AIValue>3</AIValue>
     </Culture>
@@ -342,6 +352,7 @@
         <Requires>Cultural Insurrection</Requires>
         <Category>Culture</Category>
         <CultureAbility>10</CultureAbility>
+        <LogisticsAbility>3</LogisticsAbility>
         <Model>instantcom0</Model>
         <AIValue>3</AIValue>
     </Culture>
@@ -1420,10 +1431,11 @@
     </Logistics>
     <Logistics ID="Massive Scale Building">
         <DisplayName>Massive Scale Building</DisplayName>
-        <Cost>4000</Cost>
+        <Cost>40</Cost>
         <Description>Allows us to build huge hulled starships.</Description>
         <Details>Now we can build truly huge, truly massive ships. Huge-hulled ships don't use sub-space fields anymore, they actually require a new type of energy field called the Q-field. The Q-field warps the space about the ship when it's traveling in order to hold it together. It is fantastically complicated to explain but allows for true capital ships to be created.</Details>
-        <Requires>Master Hull Building</Requires>
+        <Requires>SuperInfluence5</Requires>
+        <HitpointsAbility>1000</HitpointsAbility>
         <Category>Hull</Category>
         <Model>lrgbuilding0</Model>
         <AIValue>30</AIValue>
@@ -1942,7 +1954,7 @@
     </Weapons>
     <Weapons ID="Doom Ray">
         <DisplayName>Doom Ray</DisplayName>
-        <Cost>9000</Cost>
+        <Cost>90</Cost>
         <Description>The ultimate beam weapon.</Description>
         <Details>The Doom Ray is really several beam weapons at once. If we were to watch a Doom Ray hit an enemy ship in slow motion, you would first see the initial phased-based beam connection between the attacker and the defender. The effect is to get the Doom Ray into harmonic equality with the enemy ship.
 
@@ -1954,7 +1966,7 @@
     </Weapons>
     <Weapons ID="Black Hole Gun">
         <DisplayName>Black Hole Gun</DisplayName>
-        <Cost>8000</Cost>
+        <Cost>80</Cost>
         <Description>Ultimate mass driver weapon.</Description>
         <Details>We have previously experimented with mass driver technologies that are effectively like sending tiny white dwarf stars at our enemies. We have since discovered the Black Hole Gun. It fires projectiles that have an energy field about them that is so powerful that it warps space slightly from its own gravity soon after being fired.
 
