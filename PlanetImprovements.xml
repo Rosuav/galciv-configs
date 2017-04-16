@@ -27,7 +27,7 @@
     <S_InvasionMovie2>NeutralCivCapitol_Smoking.bik</S_InvasionMovie2>
     <S_InvasionMovie3>NeutralCivCapitol_Damaged.bik</S_InvasionMovie3>
     <S_InvasionMovie4>NeutralCivCapitol_Ruined.bik</S_InvasionMovie4>
-    <FoodProductionBonus>50</FoodProductionBonus>
+    <FoodProductionBonus>1150</FoodProductionBonus>
     <MoraleBonus>35</MoraleBonus>
   </Improvement>
   <Improvement>
@@ -51,6 +51,7 @@
     <S_InvasionMovie2>NeutralCivCapitol_Smoking.bik</S_InvasionMovie2>
     <S_InvasionMovie3>NeutralCivCapitol_Damaged.bik</S_InvasionMovie3>
     <S_InvasionMovie4>NeutralCivCapitol_Ruined.bik</S_InvasionMovie4>
+    <FoodProductionBonus>1150</FoodProductionBonus>
   </Improvement>
   <Improvement>
     <S_InternalName>Decomission</S_InternalName>
