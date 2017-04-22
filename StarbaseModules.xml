@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<StarbaseModules>
+  <DataChecksum NoParse="1">
+    <Ignore>Name,Model,Description</Ignore>
+    <Translate>Name,Description</Translate>
+  </DataChecksum>
+  <!--RepairSB-->
+  <StarbaseModule InternalName="RepairStarbase">
+    <Name>Starbase Hull Repair Kit</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Advanced Hulls</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Provides the raw materials and energy source to repair damage to the starbase.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>RepairSB</StarbaseAbility>
+    <StarbaseAbilityValue>50</StarbaseAbilityValue>
+    <ModuleCost>100</ModuleCost>
+    <Type>Any</Type>
+  </StarbaseModule>
+  <!--RepairAssist-->
+  <StarbaseModule InternalName="RepairSystem">
+    <Name>Repair System</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Advanced Hulls</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Increases the speed at which ships repair within the area of the starbase.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>RepairAssist</StarbaseAbility>
+    <StarbaseAbilityValue>1</StarbaseAbilityValue>
+    <ModuleCost>200</ModuleCost>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <!--StarbaseAttack-->
+  <StarbaseModule InternalName="BattleStationsOne">
+    <Name>Battle Stations</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Space Weapons</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Basic battle module needed for adding weapons and defenses to aid the starbase and nearby ships.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseAttack</StarbaseAbility>
+    <AttBeam>1</AttBeam>
+    <AttMissile>1</AttMissile>
+    <AttMassDriver>1</AttMassDriver>
+    <ModuleCost>100</ModuleCost>
+    <Type>Defense</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="BattleStationsTwo">
+    <Name>Battle Stations Mark II</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Medium Scale Building</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Improves the Offensive Capabilities of the Starbase.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseAttack</StarbaseAbility>
+    <AttBeam>4</AttBeam>
+    <AttMissile>4</AttMissile>
+    <AttMassDriver>4</AttMassDriver>
+    <ModuleCost>100</ModuleCost>
+    <Type>Defense</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="BattleStationsThree">
+    <Name>Battle Stations Mark III</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Large Scale Building</Tech_Requirement>
+    <Module_Requirement>BattleStationsTwo</Module_Requirement>
+    <Description>Adds Advanced Offensive Capabilities to the Starbase.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseAttack</StarbaseAbility>
+    <AttBeam>10</AttBeam>
+    <AttMissile>10</AttMissile>
+    <AttMassDriver>10</AttMassDriver>
+    <ModuleCost>100</ModuleCost>
+    <Type>Defense</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="BattleStationsFour">
+    <Name>Battle Stations Mark IV</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Massive Scale Building</Tech_Requirement>
+    <Module_Requirement>BattleStationsThree</Module_Requirement>
+    <Description>Adds Advanced Offensive Capabilities to the Starbase.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseAttack</StarbaseAbility>
+    <AttBeam>22</AttBeam>
+    <AttMissile>22</AttMissile>
+    <AttMassDriver>22</AttMassDriver>
+    <ModuleCost>100</ModuleCost>
+    <Type>Defense</Type>
+  </StarbaseModule>
+  <!-- Tier 1 SB Attack -->
+  <StarbaseModule InternalName="DevistationBeam">
+    <Name>Devastation Beam</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>ParticleBeams3</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Improves the Starbases' offensive Beam weapon capabilities.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseAttack</StarbaseAbility>
+    <AttBeam>7</AttBeam>
+    <Type>Defense</Type>
+    <ModuleCost>200</ModuleCost>
+  </StarbaseModule>
+  <StarbaseModule InternalName="MatterDetinators">
+    <Name>Matter Detonators</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Harpoon III</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Improves the Starbases' offensive Missile weapon capabilities.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseAttack</StarbaseAbility>
+    <AttMissile>7</AttMissile>
+    <Type>Defense</Type>
+    <ModuleCost>200</ModuleCost>
+  </StarbaseModule>
+  <StarbaseModule InternalName="AtlasSling">
+    <Name>Atlas Sling</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Singularity Driver III</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Improves the Starbases' offensive Mass-Drive capabilities.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseAttack</StarbaseAbility>
+    <AttMassDriver>7</AttMassDriver>
+    <Type>Defense</Type>
+    <ModuleCost>200</ModuleCost>
+  </StarbaseModule>
+  <!--Tier 1 SB Defense-->
+  <StarbaseModule InternalName="InvulnerabilityBloom">
+    <Name>Invulnerability Bloom</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Shields III</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Overlord-class Beam attacks don't stand a chance against these shields!</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseDefense</StarbaseAbility>
+    <DefShields>5</DefShields>
+    <Type>Defense</Type>
+    <ModuleCost>200</ModuleCost>
+  </StarbaseModule>
+  <StarbaseModule InternalName="ElectromagneticSurge">
+    <Name>Electro-Magnetic Surge</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>ECM III</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Your best line of defense against an Overlord-class Missile attack.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseDefense</StarbaseAbility>
+    <DefPointDefense>5</DefPointDefense>
+    <Type>Defense</Type>
+    <ModuleCost>200</ModuleCost>
+  </StarbaseModule>
+  <StarbaseModule InternalName="OverlordArmor">
+    <Name>Overlord Armor</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Duranthium III</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Built to withstand Mass-Driver attacks from Overlord-class battleships.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseDefense</StarbaseAbility>
+    <DefArmor>5</DefArmor>
+    <Type>Defense</Type>
+    <ModuleCost>200</ModuleCost>
+  </StarbaseModule>
+  <!--Tier 2 SB Attack-->
+  <StarbaseModule InternalName="SubspaceBlaster">
+    <Name>Subspace Blaster</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Phasors III</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Big powerful beam weapon to blast our enemies.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseAttack</StarbaseAbility>
+    <AttMassDriver>0</AttMassDriver>
+    <AttMissile>0</AttMissile>
+    <AttBeam>12</AttBeam>
+    <Type>Defense</Type>
+    <ModuleCost>350</ModuleCost>
+  </StarbaseModule>
+  <StarbaseModule InternalName="StarJavelin">
+    <Name>Star Javelin</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Photon Torpedo III</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>A star-based size missile system to wipe out enemy ships who dare attack.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseAttack</StarbaseAbility>
+    <AttMassDriver>0</AttMassDriver>
+    <AttMissile>12</AttMissile>
+    <AttBeam>0</AttBeam>
+    <Type>Defense</Type>
+    <ModuleCost>350</ModuleCost>
+  </StarbaseModule>
+  <StarbaseModule InternalName="ShipPounder">
+    <Name>Ship Pounder</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Graviton Driver III</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Big, bulky but lethal high speed mass driver weapon to destroy enemy ships.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseAttack</StarbaseAbility>
+    <AttMassDriver>12</AttMassDriver>
+    <AttMissile>0</AttMissile>
+    <AttBeam>0</AttBeam>
+    <Type>Defense</Type>
+    <ModuleCost>350</ModuleCost>
+  </StarbaseModule>
+  <!--Tier 2 SB Defense-->
+  <StarbaseModule InternalName="RayShielding">
+    <Name>Ray-Shielding</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Superior Force Fields</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Vector based moduled shields prevent many types of beam weapons from getting through.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseDefense</StarbaseAbility>
+    <DefShields>16</DefShields>
+    <Type>Defense</Type>
+    <ModuleCost>350</ModuleCost>
+  </StarbaseModule>
+  <StarbaseModule InternalName="MissileDefender">
+    <Name>Missile Defender</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>PD Combo III</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>The Missile Defender series of starbase defense are quite effective at stopping rampaging missiles.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseDefense</StarbaseAbility>
+    <DefPointDefense>16</DefPointDefense>
+    <Type>Defense</Type>
+    <ModuleCost>350</ModuleCost>
+  </StarbaseModule>
+  <StarbaseModule InternalName="CombatArmor">
+    <Name>Combat Armor</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Ultimate Adamantium</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Advanced armor design built to withstand most projectile based weaponry.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseDefense</StarbaseAbility>
+    <DefArmor>16</DefArmor>
+    <Type>Defense</Type>
+    <ModuleCost>350</ModuleCost>
+  </StarbaseModule>
+  <!--StarbaseAttack Korx-->
+  <StarbaseModule InternalName="Annihilator">
+    <Name>Annihilator</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseVictoryStrategy</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Improves the Starbases' offensive Beam weapon capabilities.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseAttack</StarbaseAbility>
+    <AttBeam>10</AttBeam>
+    <Type>Defense</Type>
+    <ModuleCost>350</ModuleCost>
+  </StarbaseModule>
+  <StarbaseModule InternalName="Shredder">
+    <Name>Shredder</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseSupremacy</Tech_Requirement>
+    <Module_Requirement>Annihilator</Module_Requirement>
+    <Description>Improves the Starbases' offensive Beam weapon capabilities.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>StarbaseAttack</StarbaseAbility>
+    <AttBeam>20</AttBeam>
+    <Type>Defense</Type>
+    <ModuleCost>350</ModuleCost>
+  </StarbaseModule>
+  <!--StarbaseAttack Thalan-->
+  <StarbaseModule InternalName="SingularityWeapon">
+    <Name>Singularity Weapon</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>HyperionStarbases</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Advanced weapons to ensure, that our starbases are untouchable.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>StarbaseAttack</StarbaseAbility>
+    <AttBeam>7</AttBeam>
+    <AttMissile>7</AttMissile>
+    <AttMassDriver>7</AttMassDriver>
+    <ModuleCost>300</ModuleCost>
+    <Type>Defense</Type>
+  </StarbaseModule>
+  <!--AttackAssist-->
+  <StarbaseModule InternalName="BeamMultiplierField">
+    <Name>Multiplier Field</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>AdvancedStarbaseConstruction</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Enables nearby friendly ships to use vast stored energies of the starbase to increase their weapon damage.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>AttackAssist</StarbaseAbility>
+    <AttBeam>1</AttBeam>
+    <AttMissile>1</AttMissile>
+    <AttMassDriver>1</AttMassDriver>
+    <ModuleCost>100</ModuleCost>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="BeamMultiplierField2">
+    <Name>Multiplier Field II</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseMilitarization</Tech_Requirement>
+    <Module_Requirement>BeamMultiplierField</Module_Requirement>
+    <Description>Enables nearby friendly ships to use vast stored energies of the starbase to increase their weapon damage.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>AttackAssist</StarbaseAbility>
+    <ModuleCost>100</ModuleCost>
+    <AttBeam>1</AttBeam>
+    <AttMissile>1</AttMissile>
+    <AttMassDriver>1</AttMassDriver>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="BeamMultiplierField3">
+    <Name>Multiplier Field III</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseMobilization</Tech_Requirement>
+    <Module_Requirement>BeamMultiplierField2</Module_Requirement>
+    <Description>Enables nearby friendly ships to use vast stored energies of the starbase to increase their weapon damage.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>AttackAssist</StarbaseAbility>
+    <ModuleCost>100</ModuleCost>
+    <AttBeam>2</AttBeam>
+    <AttMissile>2</AttMissile>
+    <AttMassDriver>2</AttMassDriver>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="BeamMultiplierField4">
+    <Name>Multiplier Field IV</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseProjection</Tech_Requirement>
+    <Module_Requirement>BeamMultiplierField3</Module_Requirement>
+    <Description>Enables nearby friendly ships to use vast stored energies of the starbase to increase their weapon damage.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>AttackAssist</StarbaseAbility>
+    <ModuleCost>100</ModuleCost>
+    <AttBeam>3</AttBeam>
+    <AttMissile>3</AttMissile>
+    <AttMassDriver>3</AttMassDriver>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="BeamMultiplierField5">
+    <Name>Multiplier Field V</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseDomination</Tech_Requirement>
+    <Module_Requirement>BeamMultiplierField4</Module_Requirement>
+    <Description>Enables nearby friendly ships to use vast stored energies of the starbase to increase their weapon damage.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>AttackAssist</StarbaseAbility>
+    <ModuleCost>100</ModuleCost>
+    <AttBeam>4</AttBeam>
+    <AttMissile>4</AttMissile>
+    <AttMassDriver>4</AttMassDriver>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="BeamMultiplierField6">
+    <Name>Multiplier Field VI</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseConquestStrategy</Tech_Requirement>
+    <Module_Requirement>BeamMultiplierField5</Module_Requirement>
+    <Description>Enables nearby friendly ships to use vast stored energies of the starbase to increase their weapon damage.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>AttackAssist</StarbaseAbility>
+    <ModuleCost>100</ModuleCost>
+    <AttBeam>6</AttBeam>
+    <AttMissile>6</AttMissile>
+    <AttMassDriver>6</AttMassDriver>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <!--AttackAssist Korx-->
+  <StarbaseModule InternalName="Defense Jammer">
+    <Name>Defense Jammer</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseVictoryStrategy</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>Sends out subspace pulse to disrupt enemy defense grids.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>AttackAssist</StarbaseAbility>
+    <ModuleCost>100</ModuleCost>
+    <AttBeam>2</AttBeam>
+    <AttMissile>2</AttMissile>
+    <AttMassDriver>2</AttMassDriver>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <!--AttackAssist Thalan-->
+  <StarbaseModule InternalName="SubspaceWeapons">
+    <Name>Subspace Weapons</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>HyperionStarbases</Tech_Requirement>
+    <Description>Gathers energy from nearby stars and projects it to power the weapons of friendly ships.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>AttackAssist</StarbaseAbility>
+    <AttBeam>16</AttBeam>
+    <AttMissile>16</AttMissile>
+    <AttMassDriver>16</AttMassDriver>
+    <ModuleCost>300</ModuleCost>
+    <Type>Military</Type>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+  </StarbaseModule>
+  <!--DefenseAssist-->
+  <StarbaseModule InternalName="ProtectiveFields">
+    <Name>Protection Fields</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>AdvancedStarbaseConstruction</Tech_Requirement>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+    <Description>These shields will protects ships in the area from enemy attacks.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>DefenseAssist</StarbaseAbility>
+    <DefShields>1</DefShields>
+    <DefPointDefense>1</DefPointDefense>
+    <DefArmor>1</DefArmor>
+    <Type>Military</Type>
+    <ModuleCost>100</ModuleCost>
+  </StarbaseModule>
+  <StarbaseModule InternalName="ProtectiveField2">
+    <Name>Protection Field II</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseMilitarization</Tech_Requirement>
+    <Module_Requirement>ProtectiveFields</Module_Requirement>
+    <Description>This field will protect ships in the area from enemy attacks.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>DefenseAssist</StarbaseAbility>
+    <DefShields>1</DefShields>
+    <DefPointDefense>1</DefPointDefense>
+    <DefArmor>1</DefArmor>
+    <ModuleCost>100</ModuleCost>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="ProtectiveField3">
+    <Name>Protection Field III</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseMobilization</Tech_Requirement>
+    <Module_Requirement>ProtectiveField2</Module_Requirement>
+    <Description>This field will protect ships in the area from enemy attacks.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>DefenseAssist</StarbaseAbility>
+    <DefShields>2</DefShields>
+    <DefPointDefense>2</DefPointDefense>
+    <DefArmor>2</DefArmor>
+    <ModuleCost>100</ModuleCost>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="ProtectiveField4">
+    <Name>Protection Field IV</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseProjection</Tech_Requirement>
+    <Module_Requirement>ProtectiveField3</Module_Requirement>
+    <Description>This field will protect ships in the area from enemy attacks.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>DefenseAssist</StarbaseAbility>
+    <DefShields>3</DefShields>
+    <DefPointDefense>3</DefPointDefense>
+    <DefArmor>3</DefArmor>
+    <ModuleCost>100</ModuleCost>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="ProtectiveField5">
+    <Name>Protection Field V</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseDomination</Tech_Requirement>
+    <Module_Requirement>ProtectiveField4</Module_Requirement>
+    <Description>This field will protect ships in the area from enemy attacks.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>DefenseAssist</StarbaseAbility>
+    <DefShields>4</DefShields>
+    <DefPointDefense>4</DefPointDefense>
+    <DefArmor>4</DefArmor>
+    <ModuleCost>100</ModuleCost>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="ProtectiveField6">
+    <Name>Protection Field VI</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseConquestStrategy</Tech_Requirement>
+    <Module_Requirement>ProtectiveField5</Module_Requirement>
+    <Description>This field will protect ships in the area from enemy attacks.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>DefenseAssist</StarbaseAbility>
+    <DefShields>5</DefShields>
+    <DefPointDefense>5</DefPointDefense>
+    <DefArmor>5</DefArmor>
+    <ModuleCost>100</ModuleCost>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <!--DefenseAssist Thalan-->
+  <StarbaseModule InternalName="SubspaceShields">
+    <Name>Subspace Shields</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>HyperionStarbases</Tech_Requirement>
+    <Description>Gathers energy from nearby stars and projects it as a protective shield over friendly ships.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>DefenseAssist</StarbaseAbility>
+    <StarbaseAbilityValue>1</StarbaseAbilityValue>
+    <DefShields>16</DefShields>
+    <DefPointDefense>16</DefPointDefense>
+    <DefArmor>16</DefArmor>
+    <Type>Military</Type>
+    <ModuleCost>300</ModuleCost>
+    <Module_Requirement>BattleStationsOne</Module_Requirement>
+  </StarbaseModule>
+  <!--SpeedAssist-->
+  <StarbaseModule InternalName="StellarWake">
+    <Name>Stellar Wake</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Warp Drive</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Enhancing the Starbase's gyroscopic core will slightly boost the Speed of ships.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>SpeedAssist</StarbaseAbility>
+    <StarbaseAbilityValue>1</StarbaseAbilityValue>
+    <ModuleCost>200</ModuleCost>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="InverseTractorBeams">
+    <Name>Inverse Tractor Beam</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>HyperWarp</Tech_Requirement>
+    <Module_Requirement>StellarWake</Module_Requirement>
+    <Description>Low-Level Inverse Tractor beams will give ships in the sector a small boost.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>SpeedAssist</StarbaseAbility>
+    <StarbaseAbilityValue>1</StarbaseAbilityValue>
+    <ModuleCost>200</ModuleCost>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <!--SpeedAssist Korx-->
+  <StarbaseModule InternalName="HyperField">
+    <Name>HyperField</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseSupremacy</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Magnifies the subspace field of nearby ships increasing their speed.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>SpeedAssist</StarbaseAbility>
+    <StarbaseAbilityValue>1</StarbaseAbilityValue>
+    <ModuleCost>200</ModuleCost>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <!--SpeedAssist Thalan-->
+  <StarbaseModule InternalName="PhaseLanes">
+    <Name>Phase Lane Accelerator</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>HyperionStarbases</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Spies out phase lanes and moves ships along them to speed them up.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>SpeedAssist</StarbaseAbility>
+    <StarbaseAbilityValue>1</StarbaseAbilityValue>
+    <ModuleCost>200</ModuleCost>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <!--SlowEnemies-->
+  <StarbaseModule InternalName="InterdictionBeam">
+    <Name>Interdiction Beam</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>InterstellarNavigation</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>By equipping the base with weak tractor beams we can slow down the enemy.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>SlowEnemies</StarbaseAbility>
+    <StarbaseAbilityValue>-1</StarbaseAbilityValue>
+    <ModuleCost>200</ModuleCost>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="WarpDisruptor">
+    <Name>Warp Field Disruptor</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>AdvNavigationCenters</Tech_Requirement>
+    <Module_Requirement>InterdictionBeam</Module_Requirement>
+    <Description>By disrupting the warp field, foreign ships are slowed down when entering the effective area.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>SlowEnemies</StarbaseAbility>
+    <StarbaseAbilityValue>-2</StarbaseAbilityValue>
+    <ModuleCost>200</ModuleCost>
+    <Type>Military</Type>
+  </StarbaseModule>
+  <!--Culture-->
+  <StarbaseModule InternalName="InterstellarEmbassy">
+    <Name>Interstellar Embassy</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Diplomatic Relations</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>A location where questions or comments can be placed about your civilization.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>60</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="consortium">
+    <Name>Interstellar Consortium</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Xeno Business</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Help other civilizations in this sector and in nearby sectors start franchises that push our products and culture.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>20</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="Franchise">
+    <Name>Franchise Center</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Cultural Domination</Tech_Requirement>
+    <Module_Requirement>consortium</Module_Requirement>
+    <Description>Spread our culture to nearby sectors more effectively by helping bring our products to their people.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>25</StarbaseAbilityValue>
+    <ModuleSize>2</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="FranchiseHQ">
+    <Name>Franchise Headquarters</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Historical Assimilation</Tech_Requirement>
+    <Module_Requirement>Franchise</Module_Requirement>
+    <Description>Spread our culture to nearby sectors more effectively by helping bring our products to their people.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>30</StarbaseAbilityValue>
+    <ModuleSize>2</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="Maximizer">
+    <Name>Cultural Maximization Center</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Xeno Cultural Trends</Tech_Requirement>
+    <Module_Requirement>FranchiseHQ</Module_Requirement>
+    <Description>A huge round the clock expo featuring the best of our culture.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>40</StarbaseAbilityValue>
+    <ModuleSize>3</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="Insurrection">
+    <Name>Insurrection Coordinator</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Cultural Insurrection</Tech_Requirement>
+    <Module_Requirement>Maximizer</Module_Requirement>
+    <Description>Coordinate covert attempts to subvert native governments of nearby planets.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>60</StarbaseAbilityValue>
+    <ModuleSize>3</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="CultureConquest">
+    <Name>Cultural Conquest Center</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Cultural Conquest</Tech_Requirement>
+    <Module_Requirement>Insurrection</Module_Requirement>
+    <Description>Coordinate covert attempts to subvert native governments of nearby planets.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>100</StarbaseAbilityValue>
+    <ModuleSize>3</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="CultureSupremacy">
+    <Name>Cultural Supremacy</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Technological Superiority</Tech_Requirement>
+    <Module_Requirement>CultureConquest</Module_Requirement>
+    <Description>Demonstrate our utter supremacy and make planets' citizens an offer they can't refuse.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>1000</StarbaseAbilityValue>
+    <ModuleSize>3</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <!--Culture Korx-->
+  <StarbaseModule InternalName="Imperium">
+    <Name>Imperium</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>StarbaseSupremacy</Tech_Requirement>
+    <Module_Requirement>InterstellarEmbassy</Module_Requirement>
+    <Description>A location where questions or comments can be placed about your civilization.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>50</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <!--Culture Krynn-->
+  <StarbaseModule InternalName="MissionarySupport">
+    <Name>Missionary Support</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>InterstellarMissionaries</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Supports our Missionaries to spread our influence into the universe.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>50</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="KryniacConversionTemple">
+    <Name>Kryniac Conversion Temple</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>KrynniacConversion</Tech_Requirement>
+    <Module_Requirement>MissionarySupport</Module_Requirement>
+    <Description>Allows us to train non-Krynn into becoming Disciples of Krynn.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>100</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="KryniacDiscipleChamber">
+    <Name>Kryniac Disciple Chamber</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>KrynniacDisciples</Tech_Requirement>
+    <Module_Requirement>KryniacConversionTemple</Module_Requirement>
+    <Description>Trains converts into becoming disciples to go and spread The Way.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>150</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <!--Culture Thalan-->
+  <StarbaseModule InternalName="Utopia">
+    <Name>Utopian Society</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>HyperionStarbases</Tech_Requirement>
+    <Module_Requirement>InterstellarEmbassy</Module_Requirement>
+    <Description>A place where beings can meet and discover the wonders of our culture.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>200</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="Thalan Influence">
+    <Name>Xeno Influence Module</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>XenoInfluence</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Appeals to a broad range of species to win them over to our side.</Description>
+    <StarbaseAbility>Culture</StarbaseAbility>
+    <StarbaseAbilityValue>100</StarbaseAbilityValue>
+    <ModuleSize>3</ModuleSize>
+    <ModuleCost>100</ModuleCost>
+    <Type>Culture</Type>
+  </StarbaseModule>
+  <!--ProductionAssist-->
+  <StarbaseModule InternalName="FactoryAssistantOne">
+    <Name>Starbase Factory</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>BasicSpaceConstruction</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Takes nearby asteroids and other debris and converts them into manufacturing materials that are sent to nearby planets for processing.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <Type>Economy</Type>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+  </StarbaseModule>
+  <StarbaseModule InternalName="FactoryAssistantTwo">
+    <Name>Adv. Starbase Factory</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>XenoIndustrialTheory</Tech_Requirement>
+    <Module_Requirement>FactoryAssistantOne</Module_Requirement>
+    <Description>A facility to assist workers on nearby planetary production.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="FactoryAssistantThree">
+    <Name>Massive Scaling Center</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Xeno Factory Construction</Tech_Requirement>
+    <Module_Requirement>FactoryAssistantTwo</Module_Requirement>
+    <Description>Taking advantage of zero gravity, nearby planet resources are turned into manufacturing points much faster.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>4</StarbaseAbilityValue>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="FactoryAssistantFour">
+    <Name>Interstellar Collectors</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Manufacturing Centers</Tech_Requirement>
+    <Module_Requirement>FactoryAssistantThree</Module_Requirement>
+    <Description>This module allows us to more efficiently handle our resources in a given sector. Production is enhanced.</Description>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>4</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="FactoryAssistantFive">
+    <Name>Orbital Replicators</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Industrial Sector</Tech_Requirement>
+    <Module_Requirement>FactoryAssistantFour</Module_Requirement>
+    <Description>Planet side manufacturing in this sector gets a boost thanks to orbital replication.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>3</StarbaseAbilityValue>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <!--ProductionAssist Drengin/Korath-->
+  <StarbaseModule InternalName="Orbital Slave Pit">
+    <Name>Orbital Slave Pit</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>TraditionalSlavery</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Use slave labor in space to increase slave labor on planets.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <Type>Economy</Type>
+    <StarbaseAbilityValue>3</StarbaseAbilityValue>
+  </StarbaseModule>
+  <StarbaseModule InternalName="Stellar Industrial Center">
+    <Name>Stellar Slave Center</Name>
+    <Model>Starbase01</Model>
+    <Module_Requirement>Orbital Slave Pit</Module_Requirement>
+    <Description>More slaves on our starbases equals more production done.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>8</StarbaseAbilityValue>
+    <Type>Economy</Type>
+    <Tech_Requirement>SlavePits</Tech_Requirement>
+  </StarbaseModule>
+  <StarbaseModule InternalName="Extreme Industrial Center">
+    <Name>Adv. Stellar Slave Center</Name>
+    <Model>Starbase01</Model>
+    <Module_Requirement>Stellar Industrial Center</Module_Requirement>
+    <Description>Even more slaves on our starbases equals even more production done.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>7</StarbaseAbilityValue>
+    <Type>Economy</Type>
+    <Tech_Requirement>SlaveCanyons</Tech_Requirement>
+  </StarbaseModule>
+  <!--ProductionAssist Iconians-->
+  <StarbaseModule InternalName="IndRepCenter1">
+    <Name>Industrial Replication Center I</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>AdvancedRobotics</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Takes nearby space debris and converts it into manufacturing materials that are sent to nearby planets for processing.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="IndRepCenter2">
+    <Name>Industrial Replication Center II</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>IndustrialReplication1</Tech_Requirement>
+    <Module_Requirement>IndRepCenter1</Module_Requirement>
+    <Description>Takes nearby space debris and converts it into manufacturing materials that are sent to nearby planets for processing.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="IndRepCenter3">
+    <Name>Industrial Replication Center III</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>IndustrialReplication2</Tech_Requirement>
+    <Module_Requirement>IndRepCenter2</Module_Requirement>
+    <Description>Takes nearby space debris and converts it into manufacturing materials that are sent to nearby planets for processing.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+    <Type>Economy</Type>
+  </StarbaseModule>
+
+  <!--ProductionAssist Thalan-->
+  <StarbaseModule InternalName="DistribCenter">
+    <Name>Interstellar Collectors</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>TemporalMechanics</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>This module allows us to more efficiently handle our resources in a given sector. Production is enhanced.</Description>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>10</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="ResourceCollector">
+    <Name>Resource Collector</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>HyperionStarbases</Tech_Requirement>
+    <Module_Requirement>DistribCenter</Module_Requirement>
+    <Description>Magnifies production on our nearby planets</Description>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>15</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <!--ProductionAssist Yor-->
+  <StarbaseModule InternalName="SmartDrones">
+    <Name>Smart Drones</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Cybernetic History</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Small helper bots assist with orbital production for our planets in this sector.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>10</StarbaseAbilityValue>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="MfgVortexFactory">
+    <Name>Mfg. Vortex Factory</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>ManufacturingVortex</Tech_Requirement>
+    <Module_Requirement>SmartDrones</Module_Requirement>
+    <Description>Use our Manufactucting Vortex technology in orbit.  We should see a slight boost to production.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>8</StarbaseAbilityValue>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="EnergyMatrixCenter">
+    <Name>Energy Matrix Center</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>DistributedEnergyMatrix</Tech_Requirement>
+    <Module_Requirement>MfgVortexFactory</Module_Requirement>
+    <Description>We should see a large boost to production thanks to distributed energy matrix technology.</Description>
+    <ModuleSize>2</ModuleSize>
+    <StarbaseAbility>ProductionAssist</StarbaseAbility>
+    <StarbaseAbilityValue>7</StarbaseAbilityValue>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <!--Mining-->
+  <StarbaseModule InternalName="MiningOne">
+    <Name>Mining Barracks</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>BasicSpaceConstruction</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Basic mining facility. Provides a small bonus to various abilities.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="MiningTwo">
+    <Name>Mining Headquarters</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>XenoIndustrialTheory</Tech_Requirement>
+    <Module_Requirement>MiningOne</Module_Requirement>
+    <Description>Artificial Gravity now allows workers greater maneuverability when mining.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="MiningThree">
+    <Name>Resource Excavation</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Xeno Factory Construction</Tech_Requirement>
+    <Module_Requirement>MiningTwo</Module_Requirement>
+    <Description>Using sophisticated Nano Machines, we can double our resource extraction rate.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="MiningFour">
+    <Name>Extraction Center</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Manufacturing Centers</Tech_Requirement>
+    <Module_Requirement>MiningThree</Module_Requirement>
+    <Description>Bridging mining and science, this is the pinnacle of excavation facilities.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="MiningFive">
+    <Name>Resource Sector</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Industrial Sector</Tech_Requirement>
+    <Module_Requirement>MiningFour</Module_Requirement>
+    <Description>The ultimate resource extractor</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+  </StarbaseModule>
+  <!--Mining Drengin/Korath-->
+  <StarbaseModule InternalName="Mining Center">
+    <Name>Slave Mining Center</Name>
+    <Model>Starbase01</Model>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Slaves make fantastic miners..</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+    <Tech_Requirement>TraditionalSlavery</Tech_Requirement>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+  </StarbaseModule>
+  <StarbaseModule InternalName="Mining Matrix">
+    <Name>Slave Mining Complex</Name>
+    <Model>Starbase01</Model>
+    <Module_Requirement>Mining Center</Module_Requirement>
+    <Description>Slaves tirelessly mine, and then mine some more.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+    <Tech_Requirement>SlavePits</Tech_Requirement>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+  </StarbaseModule>
+  <StarbaseModule InternalName="Adv. Mining Matrix">
+    <Name>Adv. Slave Mining Complex</Name>
+    <Model>Starbase01</Model>
+    <Module_Requirement>Mining Matrix</Module_Requirement>
+    <Description>Slaves tirelessly mine, and then mine some more.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+    <Tech_Requirement>SlaveCanyons</Tech_Requirement>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+  </StarbaseModule>
+  <!--Mining Iconians-->
+  <StarbaseModule InternalName="InterstellarMiningRefinery">
+    <Name>Interstellar Mining Refinery</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>AdvancedRobotics</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Precursor archives provide us the technology for this powerful mining mechanism.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <StarbaseAbilityValue>8</StarbaseAbilityValue>
+    <ModuleSize>2</ModuleSize>
+    <Type>Mining</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="MolecularMiningCenter">
+    <Name>Molecular Mining Center</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>MolecularFabrication</Tech_Requirement>
+    <Module_Requirement>InterstellarMiningRefinery</Module_Requirement>
+    <Description>Mining at the molecular level.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <StarbaseAbilityValue>8</StarbaseAbilityValue>
+    <ModuleSize>2</ModuleSize>
+    <Type>Mining</Type>            
+  </StarbaseModule>  
+  <!--Mining Korx-->
+  <StarbaseModule InternalName="Refinery">
+    <Name>Refinery</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>XenoRefining</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Allows us extract more from galactic resources.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="Expert Refinery">
+    <Name>Expert Refinery</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>ExpertRefining</Tech_Requirement>
+    <Module_Requirement>Refinery</Module_Requirement>
+    <Description>Allows us extract more from galactic resources.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+  </StarbaseModule>
+  <!--Mining Thalan-->
+  <StarbaseModule InternalName="MfgMiningMatrix1">
+    <Name>Mfg. Mining Matrix</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>HyperionStarbases</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Use massive amounts of cheap power to mine more effectively.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <StarbaseAbilityValue>35</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+  </StarbaseModule>
+  <!--Mining Yor-->
+  <StarbaseModule InternalName="CollectiveMining1">
+    <Name>Collective Mining I</Name>
+    <Model>Starbase01</Model>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Use collectives to mine more effectively.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+    <Tech_Requirement>Cybernetic History</Tech_Requirement>
+  </StarbaseModule>
+  <StarbaseModule InternalName="CollectiveMining2">
+    <Name>Collective Mining II</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>CollectiveManufacturing1</Tech_Requirement>
+    <Module_Requirement>CollectiveMining1</Module_Requirement>
+    <Description>Use collectives to mine more effectively.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+  </StarbaseModule>
+  <StarbaseModule InternalName="CollectiveMining3">
+    <Name>Collective Mining III</Name>
+    <Model>Starbase01</Model>
+    <Module_Requirement>CollectiveMining2</Module_Requirement>
+    <Description>Use collectives to mine more effectively.</Description>
+    <StarbaseAbility>Mining</StarbaseAbility>
+    <ModuleSize>1</ModuleSize>
+    <Type>Mining</Type>
+    <Tech_Requirement>CollectiveManufacturing3</Tech_Requirement>
+    <StarbaseAbilityValue>5</StarbaseAbilityValue>
+  </StarbaseModule>
+  <!--Trade-->
+  <StarbaseModule InternalName="TradingPost">
+    <Name>Trading Post</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Trade</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Increases weekly income of Trade Vessels traveling through this sector.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>Trade</StarbaseAbility>
+    <StarbaseAbilityValue>25</StarbaseAbilityValue>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="TradingPostAdv">
+    <Name>Advanced Trading Post</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Advanced Trade</Tech_Requirement>
+    <Module_Requirement>TradingPost</Module_Requirement>
+    <Description>Increases weekly income of Freighters traveling through this sector.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>Trade</StarbaseAbility>
+    <StarbaseAbilityValue>25</StarbaseAbilityValue>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="TradingCenter">
+    <Name>Trade Center</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Master Trade</Tech_Requirement>
+    <Module_Requirement>TradingPostAdv</Module_Requirement>
+    <Description>Increases weekly income of Trade Vessels traveling through this sector.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>Trade</StarbaseAbility>
+    <StarbaseAbilityValue>50</StarbaseAbilityValue>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <!--Trade Korx-->
+  <StarbaseModule InternalName="SuperTradeBase">
+    <Name>Super Trade Base</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>SuperTradeStarbases</Tech_Requirement>
+    <Module_Requirement>TradingPost</Module_Requirement>
+    <Description>Increases weekly income of Trade Vessels traveling through this sector.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>Trade</StarbaseAbility>
+    <StarbaseAbilityValue>100</StarbaseAbilityValue>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <!--Trade Thalan-->
+  <StarbaseModule InternalName="TradeOutpostAlpha">
+    <Name>Trade Outpost</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>HyperionStarbases</Tech_Requirement>
+    <Module_Requirement>TradingPost</Module_Requirement>
+    <Description>Increases weekly income of Trade Vessels traveling through this sector.</Description>
+    <StarbaseAbility>Trade</StarbaseAbility>
+    <StarbaseAbilityValue>50</StarbaseAbilityValue>
+    <ModuleSize>1</ModuleSize>
+    <Type>Economy</Type>
+  </StarbaseModule>
+  <!--StarbaseSensors-->
+  <StarbaseModule InternalName="SectorScanners3">
+    <Name>Sector Surveillance Scanners</Name>
+    <Model>Starbase01</Model>
+    <Tech_Requirement>Sensor2</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Increases the sensor range of the starbase for surveillance of the surrounding area.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>StarbaseSensors</StarbaseAbility>
+    <SensorRange>7</SensorRange>
+    <ModuleCost>150</ModuleCost>
+    <Type>Defense</Type>
+  </StarbaseModule> 
+  <!--TerrorStar-->
+  <StarbaseModule InternalName="TerrorStar0">
+    <Name>Terror Star Foundation</Name>
+    <Model>TerrorStar0</Model>
+    <Tech_Requirement>TerrorStar0</Tech_Requirement>
+    <Module_Requirement>None</Module_Requirement>
+    <Description>Begins the process of creating a Terror Star.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>TerrorStar</StarbaseAbility>
+    <StarbaseAbilityValue>20</StarbaseAbilityValue>
+    <ModuleCost>200</ModuleCost>
+    <Type>Terror</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="TerrorStar1">
+    <Name>Terror Star Command Center</Name>
+    <Model>TerrorStar1</Model>
+    <Tech_Requirement>TerrorStar0</Tech_Requirement>
+    <Module_Requirement>TerrorStar0</Module_Requirement>
+    <Description>Adds the command center to the Terror Star.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>TerrorStar</StarbaseAbility>
+    <StarbaseAbilityValue>20</StarbaseAbilityValue>
+    <ModuleCost>200</ModuleCost>
+    <Type>Terror</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="TerrorStar2">
+    <Name>Terror Star Storage and Barracks</Name>
+    <Model>TerrorStar2</Model>
+    <Tech_Requirement>TerrorStar0</Tech_Requirement>
+    <Module_Requirement>TerrorStar1</Module_Requirement>
+    <Description>Adds the storage and barracks areas to the Terror Star.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>TerrorStar</StarbaseAbility>
+    <StarbaseAbilityValue>20</StarbaseAbilityValue>
+    <ModuleCost>200</ModuleCost>
+    <Type>Terror</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="TerrorStar3">
+    <Name>Terror Star Navigation and Propulsion System</Name>
+    <Model>TerrorStar3</Model>
+    <Tech_Requirement>TerrorStar0</Tech_Requirement>
+    <Module_Requirement>TerrorStar2</Module_Requirement>
+    <Description>Adds the navigational systems and propulsion devices to the Terror Star.</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>TerrorStar</StarbaseAbility>
+    <StarbaseAbilityValue>20</StarbaseAbilityValue>
+    <ModuleCost>200</ModuleCost>
+    <Type>Terror</Type>
+  </StarbaseModule>
+  <StarbaseModule InternalName="TerrorStar4">
+    <Name>Terror Star Death Beam</Name>
+    <Model>TerrorStar4</Model>
+    <Tech_Requirement>TerrorStar0</Tech_Requirement>
+    <Module_Requirement>TerrorStar3</Module_Requirement>
+    <Description>Adds the finishing touch to the Terror Star - the devastating death beam!</Description>
+    <ModuleSize>1</ModuleSize>
+    <StarbaseAbility>TerrorStar</StarbaseAbility>
+    <StarbaseAbilityValue>20</StarbaseAbilityValue>
+    <ModuleCost>200</ModuleCost>
+    <Type>Terror</Type>
+  </StarbaseModule>
+</StarbaseModules>

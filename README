@@ -1,2 +1,3 @@
 cp ../../Twilight/MetaverseData/English/TechTrees/Terran_TechTree.xml TechTrees/
 cp ../../Twilight/MetaverseData/English/PlanetImprovements.xml .
+cp ../../Twilight/MetaverseData/English/StarbaseModules.xml .
