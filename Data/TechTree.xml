@@ -41,10 +41,11 @@
     <Model>translator0</Model>
     <Requires>Xeno Communications</Requires>
     <DiplomacyAbility>500</DiplomacyAbility>
-    <CultureAbility>500</CultureAbility>
+    <CultureAbility>25</CultureAbility>
+    <ResearchAbility>500</ResearchAbility>
     <SpeedAbility>1000</SpeedAbility>
     <PlanetQualityAbility>100</PlanetQualityAbility>
-    <HitpointsAbility>10000</HitpointsAbility>
+    <HitpointsAbility>100000</HitpointsAbility>
     <CreativityAbility>100</CreativityAbility>
     <PopulationGrowthAbility>100</PopulationGrowthAbility>
     <CanBeTraded>0</CanBeTraded>
